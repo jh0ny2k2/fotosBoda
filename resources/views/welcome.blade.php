@@ -113,8 +113,7 @@
     </div>
 </div>
 
-<!-- <div class=" py-16" style="background-image: url('Invitacion\ Miguel\ y\ Jenni.png'); background-size: contain;"> -->
-
+<div class="py-16 bg-no-repeat bg-center bg-contain" style="background-image: url('{{ asset('storage/invitacion.png') }}');">
 </div>
 
 
@@ -348,8 +347,8 @@
   <div class="space-y-4">
     <!-- Hotel 1 -->
     <div class="text-center">
-      <h3 class="text-2xl font-secondary text-gray-700">Hotel 1</h3>
-      <a href="">
+      <h3 class="text-2xl font-secondary text-gray-700">Balneario San Nicolás</h3>
+      <a href="https://balneariosannicolas.net">
         <button class="border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 px-6 mt-2 ">
             Ver Hotel
         </button>
@@ -358,8 +357,8 @@
 
     <!-- Hotel 2 -->
     <div class="text-center">
-      <h3 class="text-2xl font-secondary text-gray-700">Hotel 2</h3>
-      <a href="">
+      <h3 class="text-2xl font-secondary text-gray-700">Fonda Chiquito</h3>
+      <a href="https://www.fondachiquito.es">
         <button class="border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 px-6 mt-2 ">
             Ver Hotel
         </button>
@@ -367,14 +366,14 @@
     </div>
 
     <!-- Hotel 3 -->
-    <div class="text-center">
+    <!-- <div class="text-center">
       <h3 class="text-2xl font-secondary text-gray-700">Hotel 3</h3>
       <a href="">
         <button class="border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 px-6 mt-2 ">
             Ver Hotel
         </button>
       </a>
-    </div>
+    </div> -->
   </div>
 </div>
 
