@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 
 
@@ -54,8 +55,8 @@
             font-family: "New Amsterdam", sans-serif;
         }
 
-        .font-bodoni {
-            font-family: "Bodoni Moda", serif;
+        .font-pacifico {
+            font-family: "Pacifico", serif;
         }
 
         .scroll-to-bottom {
@@ -163,7 +164,7 @@
                 <div class="mb-4">
                     <img width="50" height="50" src="https://img.icons8.com/ios/50/around-the-globe.png" alt="around-the-globe"/>
                 </div>
-                <h3 class="text-3xl text-sky-950 font-semibold mb-4">La Celebración</h3>
+                <h3 class="text-3xl text-sky-950 font-pacifico mb-4">La Celebración</h3>
                 <p class="text-4xl font-semibold font-cursive text-center mb-6 font-secondary">Salones Drako</p>
                 <p class="text-lg text-center mb-6 font-semibold">Carretera Gador-Laujar, Alhama de Almería</p>
                 <p class="text-lg text-center mb-8 font-semibold">31 de Mayo a las 12:00 h</p>
@@ -179,7 +180,7 @@
 
 <!-- SECCIÓN ITINERARIO -->
 <div class="py-16 px-4 sm:px-8 md:px-16 flex flex-col items-center" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
-    <h3 class="text-3xl text-sky-950 font-semibold mb-8">Itinerario</h3>
+    <h3 class="text-3xl text-sky-950 font-pacifico mb-8">Itinerario</h3>
 
     <!-- Item 1: Ceremonia -->
     <div class="flex flex-col items-center relative mb-12">
@@ -238,7 +239,7 @@
 <!-- SECCIÓN FOTOS -->
 <section class="pt-10 px-4 sm:px-8" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <div class="text-center p-8 sm:p-16 md:p-20">
-        <p class="font-bold text-sky-950 text-3xl sm:text-4xl md:text-5xl font-secondary">Retratos de Nuestro Amor</p>
+        <p class="font-bold text-sky-950 text-3xl sm:text-4xl md:text-5xl font-pacifico">Retratos de Nuestro Amor</p>
         <p class="font-semibold text-teal-700 text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p>
         <div class="pt-10 flex justify-center">
             <img width="100" height="100" src="https://img.icons8.com/clouds/100/camera.png" class="animated-icon" alt="camera"/>
@@ -302,7 +303,7 @@
     </div>
     
     <!-- Dress Code Title -->
-    <h2 class="text-4xl font-secondary mb-2">Dress Code</h2>
+    <h2 class="text-4xl font-pacifico mb-2">Dress Code</h2>
     <p class="text-lg text-gray-600 mb-6">Código de Vestimenta</p>
     
     <div class="mt-5">
@@ -336,7 +337,7 @@
     </div>
 
   <!-- Título -->
-  <h2 class="text-4xl text-center font-secondary text-gray-700 mb-4">¿Te quedas a dormir?</h2>
+  <h2 class="text-4xl text-center font-pacifico text-gray-700 mb-4">¿Te quedas a dormir?</h2>
 
   <!-- Texto Descriptivo -->
   <p class="text-gray-500 text-center mb-6">
@@ -383,7 +384,7 @@
 <!-- ALBUN DE BODA -->
 
 <div class="bg-white p-8 py-20 max-w-lg text-center">
-    <h1 class="text-4xl font-secondary font-bold text-gray-900 mb-4">ÁLBUM DE BODA</h1>
+    <h1 class="text-4xl font-secondary font-bold text-gray-900 mb-4">Álbum de boda</h1>
     <p class="text-lg text-gray-700 mb-6">Os invitamos a nuestro Álbum de Boda.<br>
         Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.</p>
     <p class="text-lg text-gray-700 mb-6">Por favor, añade tus fotos y ayuda a construir nuestro tesoro de recuerdos.</p>
