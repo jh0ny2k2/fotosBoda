@@ -4,12 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Models\Cancion;
 use App\Models\Invitado;
+use App\Models\Numero;
 use Illuminate\Http\Request;
 
 class InvitadoController extends Controller
 {
     public function confirmarAsistencia(Request $request)
     {
+
+        $numero = Numero::find(1);  
+        $numero->numero =  $numero->numero + 1 + $request->invitados; 
+        $numero->save();  
+
         $invitado = new Invitado();
         $invitado->asistencia = $request->asistencia;
         $invitado->nombre = $request->nombre;
@@ -148,8 +154,9 @@ class InvitadoController extends Controller
     public function verInvitaciones() {
  
         $invitaciones = Invitado::all();
+        $numero = Numero::where('id', '1')->first();
      
-        return view('admin.invitados', ['invitados' => $invitaciones]);
+        return view('admin.invitados', ['invitados' => $invitaciones, 'numero' => $numero]);
     }
     
 

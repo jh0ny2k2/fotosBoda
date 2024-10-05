@@ -15,22 +15,22 @@
 
     <!-- TABLA DE CATEGORIAS -->
     <div class="overflow-x-auto">
-        <table class="min-w-full text-sm text-left text-gray-500">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
-                <tr>
-                    <th scope="col" class="px-6 py-3">Nombre</th>
-                    <th scope="col" class="px-6 py-3">Url</th>
-                </tr>
-            </thead>
-            <tbody>
                 @foreach($canciones as $cancion)
-                <tr class="bg-white border-b">
-                    <td class="px-6 py-4">{{$cancion->nombre}}</td>
-                    <td class="px-6 py-4"><a href="{{$cancion->url}}">{{$cancion->url}}</a></td>
-                </tr>
+                <!-- Información de los invitados -->
+                <div class="mt-3 border-2 border-blue-600 rounded-lg p-4 space-y-4">
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class=" rounded-lg p-2 text-center">
+                            <p class="font-semibold">Nombre de cancion</p>
+                            <p>{{$cancion->nombre}}</p>
+                        </div>
+                        <div class=" rounded-lg p-2 text-center">
+                            <p class="font-semibold">URL</p>
+                            <p><a href="{{$cancion->url}}">{{$cancion->url}}</a></p>
+                        </div>
+                    </div>
+                </div>
                 @endforeach
-            </tbody>
-        </table>
     </div>
 </div>
 </body>
