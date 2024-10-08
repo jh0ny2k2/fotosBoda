@@ -288,7 +288,8 @@
             <img src="{{ asset('storage/ceremonia.gif') }}" alt="Ceremonia" class="w-12 h-12">
         </div>
         <div class="text-center mb-4">
-            <p class="text-[#b39b79] text-xl font-e">Ceremonia</p>
+            <p class="text-sky-900 text-lg font-e">12:00 h</p>
+            <p class="text-[#b39b79] text-xl font-bold  font-e">Ceremonia</p>
         </div>
         <div class="h-16 w-1 bg-[#082F49] absolute top-full"></div>
     </div>
@@ -299,7 +300,8 @@
             <img src="{{ asset('storage/drink.gif') }}" alt="Cóctel de Bienvenida" class="w-12 h-12">
         </div>
         <div class="text-center mb-4">
-            <p class="text-[#b39b79] text-xl font-e">Cóctel de Bienvenida</p>
+            <p class="text-sky-900 text-lg font-e">13:00 h</p>
+            <p class="text-[#b39b79]  font-bold  text-2xl font-e">Cóctel de Bienvenida</p>
         </div>
         <div class="h-16 w-1 bg-[#082F49] absolute top-full"></div>
     </div>
@@ -310,7 +312,20 @@
             <img src="{{ asset('storage/comida.gif') }}" alt="Comida" class="w-14 h-14">
         </div>
         <div class="text-center mb-4">
-            <p class="text-[#b39b79] text-xl font-e">Comida</p>
+            <p class="text-sky-900 text-lg font-e">14:30 h</p>
+            <p class="text-[#b39b79] font-bold  text-2xl font-e">Comida</p>
+        </div>
+        <div class="h-16 w-1 bg-[#082F49] absolute top-full"></div>
+    </div>
+
+    <!-- Item 3: Comida -->
+    <div class="flex flex-col items-center relative mb-12">
+        <div class="p-4 mt-5">
+            <img src="{{ asset('storage/barraLibre.gif') }}" alt="Comida" class="w-14 h-14">
+        </div>
+        <div class="text-center mb-4">
+            <p class="text-sky-900 text-lg font-e">18:00 h</p>
+            <p class="text-[#b39b79] font-bold  text-2xl font-e">Barra Libre</p>
         </div>
         <div class="h-16 w-1 bg-[#082F49] absolute top-full"></div>
     </div>
@@ -318,13 +333,16 @@
     <!-- Item 4: Apertura del Baile -->
     <div class="flex flex-col items-center relative">
         <div class="p-4 mt-5">
-            <!-- <img src="baile.gif" alt="Apertura del Baile" class="w-12 h-12"> -->
-            <img src="{{ asset('storage/baile.gif') }}" alt="Cóctel de Bienvenida" class="w-12 h-12">
+            <img src="{{ asset('storage/cena.gif') }}" alt="Cóctel de Bienvenida" class="w-12 h-12">
         </div>
         <div class="text-center">
-            <p class="text-[#b39b79] text-xl font-e">Apertura del Baile</p>
+            <p class="text-sky-900 text-lg font-e">21:30 h</p>
+            <p class="text-[#b39b79] font-bold  text-2xl font-e">Cena</p>
         </div>
+        
     </div>
+
+    
 </div>
 
 
@@ -339,7 +357,7 @@
 <!-- SECCIÓN FOTOS -->
 <section class="pt-10 px-4 sm:px-8" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <div class="text-center p-8 sm:p-16 md:p-20">
-        <p class=" text-sky-950 text-3xl sm:text-4xl md:text-5xl font-pacifico ">Retratos de Nuestro Amor</p>
+        <p class=" text-sky-950 text-3xl sm:text-4xl md:text-5xl font-pacifico ">Nuestra Historia de Amor</p>
         <p class="font-e text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p>
         <div class="pt-10 flex justify-center">
             <img width="100" height="100" src="https://img.icons8.com/clouds/100/camera.png" class="animated-icon" alt="camera"/>
@@ -594,12 +612,12 @@
         
             <!-- Campo para la canción y autor -->
             <div class="mb-5">
-                <input type="text" id="cancion" name="cancion" placeholder="Nombre canción y autor" class="text-center text-sm w-full p-3 border-b border-gray-200 shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200" required>
+                <input type="text" id="cancion" name="cancion" placeholder="Nombre canción y autor" class="text-center text-sm w-full p-3 border-b border-gray-200 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200" required>
             </div>
 
             <!-- Campo para la URL -->
             <div class="mb-5">
-                <input type="url" id="url" name="url" placeholder="Si quieres pon el link de YouTube, Spotify, etc." class="text-center text-sm w-full p-3 border-b border-gray-200 shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200">
+                <input type="url" id="url" name="url" placeholder="Si quieres pon el link de YouTube, Spotify, etc." class="text-center text-sm w-full p-3 border-b border-gray-200 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200">
             </div>
 
             <!-- Botón de sugerir canción -->
@@ -718,7 +736,7 @@
   
   <!-- Nombre de la pareja -->
   <div class="text-3xl font-pacifico text-gray-800 mt-2 mb-4">
-    <p>Jennifer</p>
+    <p>Jeni</p>
   </div>
 
 
