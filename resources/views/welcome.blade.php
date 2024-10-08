@@ -245,8 +245,8 @@
 </section>
 
 <!-- SECCIÓN INFORMACIÓN -->
-<section class="" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
-    <div class="max-w-6xl mx-auto ">
+<section class="py-24" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+    <div class="max-w-6xl mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
 
             
