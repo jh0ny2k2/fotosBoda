@@ -391,36 +391,7 @@
 
 
 
-<!-- DRESS CODE -->
 
-<div class="py-24 px-14 max-w-md mx-auto text-center"   style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
-    <!-- Icons Section -->
-    <div class="flex justify-center mb-4">
-        <div class="w-16 h-16">
-            <!-- Aquí iría el ícono del traje -->
-            <img src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" alt="Traje" class="mx-auto">
-        </div>
-    </div>
-    
-    <!-- Dress Code Title -->
-    <h2 class="text-4xl text-sky-950 font-pacifico mb-2">Dress Code</h2>
-    <p class="text-lg font-e mb-6">Código de Vestimenta</p>
-    
-    <div class="mt-5">
-        <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" class="mb-4" alt="">
-        <!-- Dress Code Options -->
-        <div class="mb-6">
-            <p class="text-2xl font-e  font-semibold">Etiqueta</p>
-            <p class="text-4xl font-e font-bold">Formal</p>
-            <p class="text-2xl font-e ">Semi-Formal</p>
-            <p class="text-2xl font-e ">Casual</p>
-        </div>
-
-        <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" alt="">
-    </div>
-    
-    
-</div>
 
 
 
@@ -534,7 +505,7 @@
 <!-- style="background-image: url('{{ asset('storage/fondo.jpg') }}');" -->
     <div class="p-3">
         <!-- Título principal -->
-         <h1 class="text-5xl font-pacifico text-gray-900 mb-6">Fiesta</h1>
+         <h1 class="text-5xl font-pacifico text-sky-900 mb-6">Fiesta</h1>
         <p class="font-e mb-8">
             Hagamos juntos una fiesta única.<br>
             Os dejamos algunos detalles a tener en cuenta.
@@ -544,7 +515,7 @@
         <div class=" border-gray-900 p-8 max-w-md mx-auto">
             <h2 class="text-2xl font-pacifico mb-4">Música</h2>
             <div class="mb-4">
-                <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-12 w-12 text-amber-500 mx-auto mb-4" alt="music"/>
+                <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music"/>
                 <p class="font-e">¿Cuál es la canción que no debe faltar en la playlist de la fiesta?</p>
             </div>
 
@@ -552,34 +523,119 @@
                 Sugerir Canción
             </button>
         </div>
+
+            <div class="border-gray-900 p-8 max-w-md mx-auto">
+                <h2 class="text-2xl font-pacifico">Dress Code</h2>
+                <h2 class="text-lg font-e mb-4">Código de Vestimenta</h2>
+                <div class="mb-4">
+                    <img width="158" height="158" src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="dress-code-icon" />
+                    <p class="font-e">¿Cuál es la canción que no debe faltar en la playlist de la fiesta?</p>
+                </div>
+
+                <!-- Botón para abrir el modal -->
+                <button id="openDressCodeModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 hover:bg-[#b39b79] transition-colors">
+                    Ver Dress Code
+                </button>
+            </div>
+
+        <!-- Modal Dress Code -->
+        <div id="dressCodeModalContainer" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+            <div class="relative rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
+                <!-- Botón de cerrar el modal en la esquina superior derecha -->
+                <button id="closeDressCodeModal" class="absolute top-4 right-4 text-gray-900 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16">
+                        <!-- Aquí iría el ícono del traje -->
+                        <img src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" alt="Traje" class="mx-auto">
+                    </div>
+                </div>
+
+                <!-- Contenido del modal -->
+                <h2 class="text-2xl text-gray-950 font-pacifico mb-2">Dress Code</h2>
+                <p class="text-lg font-e mb-6">Código de Vestimenta</p>
+
+                <div class="mt-5">
+                    <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" class="mb-4" alt="horizontal-line" />
+                    
+                    <!-- Opciones de Dress Code -->
+                    <div class="mb-6 text-center">
+                        <p class="text-xl font-e font-semibold">Etiqueta</p>
+                        <p class="text-3xl font-e font-bold">Formal</p>
+                        <p class="text-xl font-e">Semi-Formal</p>
+                        <p class="text-xl font-e">Casual</p>
+                    </div>
+
+                    <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" alt="horizontal-line" />
+                </div>
+            </div>
+        </div>
+
+    <!-- Script para abrir y cerrar el modal -->
+    <script>
+        // Obtener elementos del DOM
+        const openDressCodeModalButton = document.getElementById('openDressCodeModal');
+        const closeDressCodeModalButton = document.getElementById('closeDressCodeModal');
+        const dressCodeModalContainer = document.getElementById('dressCodeModalContainer');
+
+        // Abrir el modal al hacer clic en el botón
+        openDressCodeModalButton.addEventListener('click', () => {
+            dressCodeModalContainer.classList.remove('hidden');
+        });
+
+        // Cerrar el modal al hacer clic en el botón de cerrar
+        closeDressCodeModalButton.addEventListener('click', () => {
+            dressCodeModalContainer.classList.add('hidden');
+        });
+
+        // Cerrar el modal si se hace clic fuera del contenido del modal
+        window.addEventListener('click', (event) => {
+            if (event.target === dressCodeModalContainer) {
+                dressCodeModalContainer.classList.add('hidden');
+            }
+        });
+    </script>
+
+
     </div>
 </div>
 
-<!-- Modal (inicialmente oculto) -->
+
 <!-- Modal (inicialmente oculto) -->
 <div id="suggestionModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
-    <div class="rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
+    <div class="relative rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
+        
+        <!-- Botón de cerrar en la esquina superior derecha con estilo circular -->
+        <button id="closeModal" class="absolute top-4 right-4 bg-white rounded-full p-2 border border-gray-300 shadow-lg text-sky-900 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music"/>
+
         <h2 class="text-3xl font-pacifico text-gray-800 mb-6 text-center">Sugerir Canción</h2>
 
         <form action="{{ route('cancion') }}" method="POST" enctype="multipart/form-data">
             @csrf
-
-            <!-- Campo para el nombre -->
+        
+            <!-- Campo para la canción y autor -->
             <div class="mb-5">
-                <!-- <label for="nombre" class="block text-sm font-semibold text-gray-700 mb-1">Nombre de la canción</label> -->
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre canción y autor" class="text-center text-sm w-full p-3 border-b border-gray-200 shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200"required>
+                <input type="text" id="cancion" name="cancion" placeholder="Nombre canción y autor" class="text-center text-sm w-full p-3 border-b border-gray-200 shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200" required>
             </div>
 
             <!-- Campo para la URL -->
             <div class="mb-5">
-                <!-- <label for="url" class="block text-sm font-semibold text-gray-700 mb-1">Enlace de la Canción (opcional)</label> -->
-                <input type="url" id="url" name="url" placeholder="URL de la canción" class="text-center text-sm w-full p-3 border-b border-gray-200 shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200">
+                <input type="url" id="url" name="url" placeholder="Si quieres pon el link de YouTube, Spotify, etc." class="text-center text-sm w-full p-3 border-b border-gray-200 shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200">
             </div>
 
-            <!-- Botones de acción -->
-            <div class="flex justify-end space-x-4">
-                <button type="button" id="closeModal" class="border-gray-400 border-b-2 text-gray-900 py-2  hover:border-gray-700 transition-colors duration-200">Cancelar</button>
-                <button type="submit" class="border-sky-700 border-b-2 text-gray-900 py-2  hover:border-sky-600 transition-colors duration-200">Sugerir Canción</button>
+            <!-- Botón de sugerir canción -->
+            <div class="flex justify-center mt-4">
+                <button type="submit" class=" text-gray-900 py-2 border-b-2 border-sky-900  transition-colors duration-200">Sugerir Canción</button>
             </div>
         </form>
     </div>
