@@ -96,17 +96,22 @@
 
 
 <!-- Banner -->
-<div class="relative h-screen p-6 sm:p-16 md:p-20 bg-center bg-[#f5f1e8]" style="background-image: url('{{ asset('storage/fondo inicio.png') }}'); background-size: cover;">
+<div class="relative sm:p-16 md:p-20 bg-center" style="background-image: url('{{ asset('storage/fondo inicio.jpeg') }}'); background-size: cover;">
     <!-- Contenido del Banner -->
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-
-         <img src="{{ asset('storage/avion.gif') }}" class="w-16 h-16" alt=""> 
-
-        <img src="{{ asset('storage/bodorrio.png') }}" alt="">
+    <div class="relative p-6 z-10 flex flex-col items-center justify-center h-full text-center text-white">
+        <!-- Avión GIF -->
+        <img src="{{ asset('storage/avion.gif') }}" class="w-16 h-16" alt="Avión animado">
         
+        <!-- Imagen principal Bodorrio -->
+        <img src="{{ asset('storage/bodorrio.png') }}" alt="Bodorrio">
     </div>
 
+    <!-- Contenedor para la invitación separado para asegurar su redondeo -->
+    <div class="py-6 px-1" >
+        <img class="rounded-3xl shadow-xl" src="{{ asset('storage/invitacion.png') }}" alt="Invitación">
+    </div>
 </div>
+
 
 <!-- <div class="py-16 bg-no-repeat bg-center bg-contain" style="background-image: url('{{ asset('storage/invitacion.png') }}');">
 </div> -->
@@ -244,7 +249,7 @@
     <div class="max-w-6xl mx-auto ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
 
-            <img class="rounded-3xl py-6 px-2" src="{{ asset('storage/invitacion.png') }}" alt="Invitación">
+            
 
             <!-- Columna Celebración -->
             <div class="flex flex-col items-center">
