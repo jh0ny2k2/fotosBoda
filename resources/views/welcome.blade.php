@@ -398,7 +398,7 @@
 
 <!-- SECCION HOTELES --> 
 
-<div class="bg-gray-50 p-8 py-24 max-w-md mx-auto rounded-lg shadow-md" >
+<div class="bg-gray-50 p-8 py-24 max-w-md mx-auto " >
 <!-- style="background-image: url('{{ asset('storage/fondo.jpg') }}');" -->
   <!-- Icono Maleta -->
     <div class="flex justify-center mb-4">
@@ -437,16 +437,6 @@
         </button>
       </a>
     </div>
-
-    <!-- Hotel 3 -->
-    <!-- <div class="text-center">
-      <h3 class="text-2xl font-secondary text-gray-700">Hotel 3</h3>
-      <a href="">
-        <button class="border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 px-6 mt-2 ">
-            Ver Hotel
-        </button>
-      </a>
-    </div> -->
   </div>
 </div>
 
@@ -454,27 +444,6 @@
 
 
 <!-- ALBUM DE BODA -->
-<!-- <div class="relative w-full h-screen">
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white z-10"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-transparent to-white z-10"></div>
-    <div class="relative w-full h-full bg-cover bg-center" style="background-image: url('{{ asset('storage/novios.jpg') }}');">
-        <h1 class="text-4xl font-pacifico text-sky-950 mb-6">Álbum de boda</h1>
-    <p class="font-e mb-6">Os invitamos a nuestro Álbum de Boda.<br>
-        Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.</p>
-    <p class="font-e mb-10">Por favor, añade tus fotos y ayuda a construir nuestro tesoro de recuerdos.</p>
-
-    <div class="space-y-7 mt-7">
-        <div class="text-center">
-            <a href="{{ route('verSubirFotos') }}" class=" border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 mt-2 ">Subir Foto de Boda</a>
-        </div>
-
-        <div class="text-center">
-            <a href="{{ route('verFotos') }}" class=" border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 mt-2 ">Ir Álbum de Boda</a>
-        </div>
-  </div>
-    </div>
-</div> -->
-
 <div class="bg-white p-8 py-28 pb-32 max-w-lg text-center" style="background-image: url('{{ asset('storage/novios.png') }}'); background-size: cover;">
     <h1 class="text-4xl font-pacifico text-sky-950 mb-6">Álbum de boda</h1>
     <p class="font-e mb-6">Os invitamos a nuestro Álbum de Boda.<br>
@@ -501,7 +470,7 @@
 
 <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
 
-<div class="text-center mt-14 py-24" >
+<div class="text-center mt-14 py-18" >
 <!-- style="background-image: url('{{ asset('storage/fondo.jpg') }}');" -->
     <div class="p-3">
         <!-- Título principal -->
