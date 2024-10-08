@@ -107,7 +107,7 @@
     </div>
 
     <!-- Contenedor para la invitación separado para asegurar su redondeo -->
-    <div class="py-7 px-1" >
+    <div class="pt-7 px-1" >
         <img class="rounded-3xl shadow-xl" src="{{ asset('storage/invitacion.png') }}" alt="Invitación">
     </div>
 </div>
