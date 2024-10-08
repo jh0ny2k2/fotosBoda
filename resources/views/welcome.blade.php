@@ -257,27 +257,27 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="bg-gray-200 bg-opacity-80 rounded-10xl flex justify-center items-center">
-                    <img src="{{ asset('storage/FotoPrimos.jpg') }}" class="w-full rounded" alt="">
+                    <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
-                    <img src="{{ asset('storage/FotoPrimos.jpg') }}" class="w-full rounded" alt="">
+                    <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
-                    <img src="{{ asset('storage/FotoPrimos.jpg') }}" class="w-full rounded" alt="">
+                    <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
-                    <img src="{{ asset('storage/FotoPrimos.jpg') }}" class="w-full rounded" alt="">
+                    <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
-                    <img src="{{ asset('storage/FotoPrimos.jpg') }}" class="w-full rounded" alt="">
+                    <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
                 </div>
             </div>
         </div>
