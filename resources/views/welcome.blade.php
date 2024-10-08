@@ -96,18 +96,18 @@
 
 
 <!-- Banner -->
-<div class="relative sm:p-16 md:p-20 bg-center" style="background-image: url('{{ asset('storage/fondo inicio.jpeg') }}'); background-size: cover;">
+<div class="relative sm:p-16 md:p-20 bg-center bg-gray-200" style="background-image: url('{{ asset('storage/fondo inicio.png') }}'); background-size: cover;">
     <!-- Contenido del Banner -->
     <div class="relative p-6 z-10 flex flex-col items-center justify-center h-full text-center text-white">
         <!-- Avión GIF -->
         <img src="{{ asset('storage/avion.gif') }}" class="w-16 h-16" alt="Avión animado">
         
         <!-- Imagen principal Bodorrio -->
-        <img src="{{ asset('storage/bodorrio.png') }}" alt="Bodorrio">
+        <img src="{{ asset('storage/bodorrio.png') }}" class="py-2" alt="Bodorrio">
     </div>
 
     <!-- Contenedor para la invitación separado para asegurar su redondeo -->
-    <div class="pt-7 px-1" >
+    <div class="pt-10 px-1" >
         <img class="rounded-3xl shadow-xl" src="{{ asset('storage/invitacion.png') }}" alt="Invitación">
     </div>
 </div>
