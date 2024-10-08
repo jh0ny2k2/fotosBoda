@@ -439,32 +439,35 @@
 </div>
 
 <!-- Modal (inicialmente oculto) -->
-<div id="suggestionModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden" >
-    <div class="rounded-lg shadow-xl p-6 w-full max-w-lg">
-        <h2 class="text-xl font-semibold text-gray-800 mb-4">Sugerir una Canción</h2>
+<!-- Modal (inicialmente oculto) -->
+<div id="suggestionModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+    <div class="rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Sugerir Canción</h2>
 
         <form action="{{ route('cancion') }}" method="POST" enctype="multipart/form-data">
             @csrf
+
             <!-- Campo para el nombre -->
-            <div class="mb-4">
-                <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre de la cancion</label>
-                <input type="text" id="nombre" name="nombre" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Nombre" required>
+            <div class="mb-5">
+                <!-- <label for="nombre" class="block text-sm font-semibold text-gray-700 mb-1">Nombre de la canción</label> -->
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre canción y autor" class="text-center text-sm w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200"required>
             </div>
 
             <!-- Campo para la URL -->
-            <div class="mb-4">
-                <label for="url" class="block text-sm font-medium text-gray-700">Enlace de la Canción (opcional)</label>
-                <input type="url" id="url" name="url" class="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="https://ejemplo.com/cancion">
+            <div class="mb-5">
+                <!-- <label for="url" class="block text-sm font-semibold text-gray-700 mb-1">Enlace de la Canción (opcional)</label> -->
+                <input type="url" id="url" name="url" placeholder="URL de la canción" class="text-center text-sm w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200">
             </div>
 
             <!-- Botones de acción -->
             <div class="flex justify-end space-x-4">
-                <button type="button" id="closeModal" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600 transition-colors">Cancelar</button>
-                <button type="submit" class="bg-sky-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition-colors">Enviar</button>
+                <button type="button" id="closeModal" class="border-gray-400 border-b-2 text-gray-900 py-2  hover:border-gray-700 transition-colors duration-200">Cancelar</button>
+                <button type="submit" class="border-sky-700 border-b-2 text-gray-900 py-2  hover:border-sky-600 transition-colors duration-200">Sugerir Canción</button>
             </div>
         </form>
     </div>
 </div>
+
 
 
 
