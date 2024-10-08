@@ -513,7 +513,7 @@
 
         <!-- Sección Música -->
         <div class=" border-gray-900 p-8 max-w-md mx-auto">
-            <h2 class="text-2xl font-secondary font-bold mb-4">Música</h2>
+            <h2 class="text-3xl font-secondary font-bold mb-4">Música</h2>
             <div class="mb-4">
                 <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music"/>
                 <p class="font-e">¿Cuál es la canción que no debe faltar en la playlist de la fiesta?</p>
@@ -525,7 +525,7 @@
         </div>
 
             <div class="border-gray-900 p-8 max-w-md mx-auto">
-                <h2 class="text-2xl font-secondary font-bold">Dress Code</h2>
+                <h2 class="text-3xl font-secondary font-bold">Dress Code</h2>
                 <h2 class="text-lg font-e mb-4">Código de Vestimenta</h2>
                 <div class="mb-4">
                     <img width="158" height="158" src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="dress-code-icon" />
