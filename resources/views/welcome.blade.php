@@ -95,9 +95,8 @@
 
 
 
-
 <!-- Banner -->
-<div class="relative h-screen p-6 sm:p-16 md:p-20  bg-center" style="background-image: url('{{ asset('storage/fondo inicio.jpeg') }}'); background-size: cover;">
+<div class="relative h-screen p-6 sm:p-16 md:p-20 bg-center bg-[#f5f1e8]" style="background-image: url('{{ asset('storage/fondo inicio.png') }}'); background-size: cover;">
     <!-- Contenido del Banner -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
 
@@ -106,13 +105,12 @@
         <img src="{{ asset('storage/bodorrio.png') }}" alt="">
         
     </div>
+
 </div>
 
 <!-- <div class="py-16 bg-no-repeat bg-center bg-contain" style="background-image: url('{{ asset('storage/invitacion.png') }}');">
 </div> -->
-<div class="bg-gray-200 bg-no-repeat bg-center bg-contain">
-      <img class="rounded-2xl" src="{{ asset('storage/invitacion.png') }}" alt="">
-</div>
+
 
 <!-- <div class="flex items-center justify-center min-h-screen" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <div class="p-8 rounded-lg text-center max-w-md items-center">
@@ -242,9 +240,12 @@
 </section>
 
 <!-- SECCIÓN INFORMACIÓN -->
-<section class="py-24" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
-    <div class="max-w-6xl mx-auto px-4">
+<section class="" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+    <div class="max-w-6xl mx-auto ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+
+            <img class="rounded-3xl py-6 px-2" src="{{ asset('storage/invitacion.png') }}" alt="Invitación">
+
             <!-- Columna Celebración -->
             <div class="flex flex-col items-center">
                 <div class="mb-4">
