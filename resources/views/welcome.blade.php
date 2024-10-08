@@ -110,6 +110,9 @@
 
 <!-- <div class="py-16 bg-no-repeat bg-center bg-contain" style="background-image: url('{{ asset('storage/invitacion.png') }}');">
 </div> -->
+<div class="bg-gray-200 bg-no-repeat bg-center bg-contain">
+      <img class="rounded-2xl" src="{{ asset('storage/invitacion.png') }}" alt="">
+</div>
 
 <!-- <div class="flex items-center justify-center min-h-screen" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <div class="p-8 rounded-lg text-center max-w-md items-center">
