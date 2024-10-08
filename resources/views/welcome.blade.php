@@ -19,24 +19,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
-
-
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <audio id="miAudio" src="{{ asset('audio/musica.mp3') }}"></audio>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var audio = document.getElementById('miAudio');
-            audio.play().catch(function(error) {
-                console.log('Error al intentar reproducir el audio:', error);
-            });
-        });
-    </script>
     <style>
         html, body {
             height: 100%;
@@ -98,7 +87,7 @@
 
     </style>
 </head>
-<body style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<body>
 
 
 
@@ -119,29 +108,37 @@
     </div>
 </div>
 
-<div class="py-16 bg-no-repeat bg-center bg-contain" style="background-image: url('{{ asset('storage/invitacion.png') }}');">
-</div>
+<!-- <div class="py-16 bg-no-repeat bg-center bg-contain" style="background-image: url('{{ asset('storage/invitacion.png') }}');">
+</div> -->
 
-
-<!-- SECCIÓN INFORMACIÓN -->
-<section class="py-24 bg-white" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-            <!-- Columna Celebración -->
-            <div class="flex flex-col items-center">
-                <div class="mb-4">
-                    <img width="50" height="50" src="https://img.icons8.com/ios/50/around-the-globe.png" alt="around-the-globe"/>
-                </div>
-                <h3 class="text-3xl text-sky-950 font-pacifico mb-4">La Celebración</h3>
-                <p class="text-2xl font-e text-center mb-6 mt-10 ">Salones Drako</p>
-                <p class="text-lg text-center mb-6 font-e">Carretera Gador-Laujar, Alhama de Almería</p>
-                <p class="text-lg text-center mb-8 font-e">31 de Mayo a las 12:00 h</p>
-                <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd700c912e7d8be9:0x3b966fc438429562?sa=X&ved=1t:8290&ictx=111" class=" text-sky-950 border-b-2 border-yellow-600 py-3 text-lg ">Ver ubicación</a>
-            </div>
+<!-- <div class="flex items-center justify-center min-h-screen" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+    <div class="p-8 rounded-lg text-center max-w-md items-center">
+        <div class="mb-10 text-center flex justify-center">
+            
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/around-the-globe.png" alt="around-the-globe"/>
         </div>
-    </div>
-</section>
+        <h1 class="text-2xl text-sky-950 font-pacifico">Miguel Sanchez Prada</h1>
+        <h2 class="text-lg text-sky-950 font-pacifico">&</h2>
+        <h1 class="text-2xl text-sky-950 font-pacifico mb-8">Jenifer Hidalgo Valenzuela</h1>
 
+        <p class="text-lg font-e mb-8">Tenemos algo importante que contaros</p>
+
+        <p class="text-xl font-bold text-[#b39b79] font-e mb-1">¡Nos Casamos!</p>
+
+        <p class="text-sm font-e mb-10">
+            Preparaos para el viaje más importante de nuestras vidas. ¡Nuestra Boda! Llenad la maleta de sonrisas, ganas de pasaro bien y mucho amor
+        </p>
+
+        
+        <p class="text-xl font-e text-[#b39b79] font-bold ">23 de Mayo de 2026</p>
+        <p class="font-e text-lg mb-10">Sábado</p>
+
+        <p class="text-xl font-bold text-[#b39b79] font-e">Salones Drako</p>
+        <p class="text-lg mb-8 font-e">Carretera Gador-Laujar, Alhama de Almería</p>
+
+        <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd700c912e7d8be9:0x3b966fc438429562?sa=X&ved=1t:8290&ictx=111" class=" text-sky-950 border-b-2 border-[#b39b79] py-3 text-lg ">Ver ubicación</a>
+    </div>
+</div> -->
 
 <!-- SECCIÓN RELOJ -->
 <section class="flex flex-col items-center justify-center bg-gray-200 py-8 ">
@@ -171,7 +168,96 @@
             </div>
         </div>
     </div>
+
+        <p class="mb-4 text-gray-600 font-serif">Haz click para reproducir la música</p>
+        
+        <div class="flex items-center space-x-4">
+            <!-- Botón de reproducción -->
+            <button id="playPauseBtn" onclick="togglePlay()" class="p-2 rounded">
+                <i class="zmdi zmdi-play"></i>
+            </button>
+
+            <!-- Barra de progreso de audio -->
+            <input id="progressBar" type="range" min="0" max="100" value="0" 
+                   class="w-36 h-2 rounded-xl accent-blue-500">
+            
+            <!-- Control de volumen (solo diseño, sin funcionalidad) -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5M12 8.25v7.5M8.25 10.5v3" />
+            </svg>
+        </div>
+
+        <!-- Audio -->
+        <audio id="audio">
+            <source src="{{ asset('audio/musica.mp3') }}" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const progressBar = document.getElementById('progressBar');
+
+        let isPlaying = false;
+
+        // Función para reproducir o pausar el audio
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+                playPauseBtn.innerHTML = '<i class="zmdi zmdi-pause"></i>';
+                isPlaying = true;
+            } else {
+                audio.pause();
+                playPauseBtn.innerHTML = '<i class="zmdi zmdi-play"></i>';
+                isPlaying = false;
+            }
+        }
+
+        // Iniciar el audio solo después de la primera interacción del usuario
+        document.addEventListener('click', function() {
+            if (!isPlaying) {
+                audio.play();
+                playPauseBtn.innerHTML = '<i class="zmdi zmdi-pause"></i>';
+                isPlaying = true;
+            }
+        });
+
+        // Actualiza la barra de progreso conforme avanza la música
+        audio.addEventListener('timeupdate', function() {
+            const progress = (audio.currentTime / audio.duration) * 100;
+            progressBar.value = progress;
+        });
+
+        // Permite ajustar la posición del audio cuando se mueve la barra de progreso
+        progressBar.addEventListener('input', function() {
+            const seekTime = (progressBar.value / 100) * audio.duration;
+            audio.currentTime = seekTime;
+        });
+    </script>
+
 </section>
+
+<!-- SECCIÓN INFORMACIÓN -->
+<section class="py-24" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+            <!-- Columna Celebración -->
+            <div class="flex flex-col items-center">
+                <div class="mb-4">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/around-the-globe.png" alt="around-the-globe"/>
+                </div>
+                <h3 class="text-3xl text-sky-950 font-pacifico mb-4">La Celebración</h3>
+                <p class="text-2xl font-e text-center font-bold text-[#b39b79]  mt-10 ">Salones Drako</p>
+                <p class="text-lg text-center mb-6 font-e">Carretera Gador-Laujar, Alhama de Almería</p>
+                <p class="text-lg text-center mb-8 font-e">31 de Mayo a las 12:00 h</p>
+                <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd700c912e7d8be9:0x3b966fc438429562?sa=X&ved=1t:8290&ictx=111" class=" text-sky-950 border-b-2 border-yellow-600 py-3 text-lg ">Ver ubicación</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 
 
@@ -332,7 +418,8 @@
 
 <!-- SECCION HOTELES --> 
 
-<div class="bg-gray-50 p-8 py-24 max-w-md mx-auto rounded-lg shadow-md" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<div class="bg-gray-50 p-8 py-24 max-w-md mx-auto rounded-lg shadow-md" >
+<!-- style="background-image: url('{{ asset('storage/fondo.jpg') }}');" -->
   <!-- Icono Maleta -->
     <div class="flex justify-center mb-4">
         <div class="w-16 h-16">
@@ -387,8 +474,28 @@
 
 
 <!-- ALBUM DE BODA -->
+<!-- <div class="relative w-full h-screen">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white z-10"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-transparent to-white z-10"></div>
+    <div class="relative w-full h-full bg-cover bg-center" style="background-image: url('{{ asset('storage/novios.jpg') }}');">
+        <h1 class="text-4xl font-pacifico text-sky-950 mb-6">Álbum de boda</h1>
+    <p class="font-e mb-6">Os invitamos a nuestro Álbum de Boda.<br>
+        Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.</p>
+    <p class="font-e mb-10">Por favor, añade tus fotos y ayuda a construir nuestro tesoro de recuerdos.</p>
 
-<div class="bg-white p-8 py-24 max-w-lg text-center" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+    <div class="space-y-7 mt-7">
+        <div class="text-center">
+            <a href="{{ route('verSubirFotos') }}" class=" border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 mt-2 ">Subir Foto de Boda</a>
+        </div>
+
+        <div class="text-center">
+            <a href="{{ route('verFotos') }}" class=" border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 mt-2 ">Ir Álbum de Boda</a>
+        </div>
+  </div>
+    </div>
+</div> -->
+
+<div class="bg-white p-8 py-28 pb-32 max-w-lg text-center" style="background-image: url('{{ asset('storage/novios.png') }}'); background-size: cover;">
     <h1 class="text-4xl font-pacifico text-sky-950 mb-6">Álbum de boda</h1>
     <p class="font-e mb-6">Os invitamos a nuestro Álbum de Boda.<br>
         Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.</p>
@@ -414,7 +521,8 @@
 
 <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
 
-<div class="text-center mt-14 py-24" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<div class="text-center mt-14 py-24" >
+<!-- style="background-image: url('{{ asset('storage/fondo.jpg') }}');" -->
     <div class="p-3">
         <!-- Título principal -->
          <h1 class="text-5xl font-pacifico text-gray-900 mb-6">Fiesta</h1>
@@ -442,7 +550,7 @@
 <!-- Modal (inicialmente oculto) -->
 <div id="suggestionModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
     <div class="rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Sugerir Canción</h2>
+        <h2 class="text-3xl font-pacifico text-gray-800 mb-6 text-center">Sugerir Canción</h2>
 
         <form action="{{ route('cancion') }}" method="POST" enctype="multipart/form-data">
             @csrf
@@ -450,13 +558,13 @@
             <!-- Campo para el nombre -->
             <div class="mb-5">
                 <!-- <label for="nombre" class="block text-sm font-semibold text-gray-700 mb-1">Nombre de la canción</label> -->
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre canción y autor" class="text-center text-sm w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200"required>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre canción y autor" class="text-center text-sm w-full p-3 border-b border-gray-200 shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200"required>
             </div>
 
             <!-- Campo para la URL -->
             <div class="mb-5">
                 <!-- <label for="url" class="block text-sm font-semibold text-gray-700 mb-1">Enlace de la Canción (opcional)</label> -->
-                <input type="url" id="url" name="url" placeholder="URL de la canción" class="text-center text-sm w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200">
+                <input type="url" id="url" name="url" placeholder="URL de la canción" class="text-center text-sm w-full p-3 border-b border-gray-200 shadow-sm focus:ring-sky-500 focus:border-sky-500 transition-all duration-200">
             </div>
 
             <!-- Botones de acción -->
@@ -565,7 +673,7 @@
 
 <div class="flex flex-col items-center justify-center py-12 bg-white text-center">
   <!-- Nombres -->
-  <div class="text-4xl font-secondary text-gray-800">
+  <div class="text-3xl font-pacifico text-gray-800 mt-4">
     <p>Miguel</p>
   </div>
   
@@ -575,17 +683,17 @@
   </div>
   
   <!-- Nombre de la pareja -->
-  <div class="text-4xl font-secondary text-gray-800 mt-2">
+  <div class="text-3xl font-pacifico text-gray-800 mt-2 mb-4">
     <p>Jennifer</p>
   </div>
 
-  <!-- Línea divisoria -->
-  <!-- <div class="w-full my-6 border-t border-gray-300"></div> -->
+
+  <div class="w-80 my-6 border-t border-dashed border-[#b39b79]"></div> 
 
   <!-- Mensaje de agradecimiento -->
-  <div class="text-lg text-gray-700 my-12">
-    <p class="font-secondary">GRACIAS</p>
-    <p>por acompañarnos en un día tan especial</p>
+  <div class="text-lg text-gray-700 mt-8 mb-4">
+    <p class="font-secondary ">GRACIAS</p>
+    <p class="">por acompañarnos en un día tan especial</p>
   </div>
 </div>
 
@@ -605,10 +713,6 @@
 
 
 
-<video id="video" width="0" height="0" autoplay controls loop>
-  <source src="{{ asset('storage/video.mp4') }}" type="video/mp4">
-  Tu navegador no soporta el elemento de video.
-</video>
 
 
 
