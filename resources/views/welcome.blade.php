@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=New+Amsterdam&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
 
 
@@ -59,6 +60,10 @@
             font-family: "Pacifico", serif;
         }
 
+        .font-e {
+            font-family: "Indie Flower", serif;
+        }
+
         .scroll-to-bottom {
             animation: bounce 2s infinite; /* Animación de rebote */
         }
@@ -93,7 +98,7 @@
 
     </style>
 </head>
-<body>
+<body style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
 
 
 
@@ -118,7 +123,24 @@
 </div>
 
 
-
+<!-- SECCIÓN INFORMACIÓN -->
+<section class="py-16 bg-white" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+            <!-- Columna Celebración -->
+            <div class="flex flex-col items-center">
+                <div class="mb-4">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/around-the-globe.png" alt="around-the-globe"/>
+                </div>
+                <h3 class="text-3xl text-sky-950 font-pacifico mb-4">La Celebración</h3>
+                <p class="text-2xl font-e text-center mb-6 mt-10 ">Salones Drako</p>
+                <p class="text-lg text-center mb-6 font-e">Carretera Gador-Laujar, Alhama de Almería</p>
+                <p class="text-lg text-center mb-8 font-e">31 de Mayo a las 12:00 h</p>
+                <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd700c912e7d8be9:0x3b966fc438429562?sa=X&ved=1t:8290&ictx=111" class=" text-sky-950 border-b-2 border-yellow-600 py-3 text-lg ">Ver ubicación</a>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!-- SECCIÓN RELOJ -->
@@ -155,24 +177,7 @@
 
 
 
-<!-- SECCIÓN INFORMACIÓN -->
-<section class="py-16 bg-white" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-            <!-- Columna Celebración -->
-            <div class="flex flex-col items-center">
-                <div class="mb-4">
-                    <img width="50" height="50" src="https://img.icons8.com/ios/50/around-the-globe.png" alt="around-the-globe"/>
-                </div>
-                <h3 class="text-3xl text-sky-950 font-pacifico mb-4">La Celebración</h3>
-                <p class="text-4xl font-semibold font-cursive text-center mb-6 font-secondary">Salones Drako</p>
-                <p class="text-lg text-center mb-6 font-semibold">Carretera Gador-Laujar, Alhama de Almería</p>
-                <p class="text-lg text-center mb-8 font-semibold">31 de Mayo a las 12:00 h</p>
-                <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd700c912e7d8be9:0x3b966fc438429562?sa=X&ved=1t:8290&ictx=111" class=" text-sky-950 border-b-2 border-yellow-600 py-3 text-lg ">Ver ubicación</a>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 
 
@@ -188,7 +193,7 @@
             <img src="{{ asset('storage/ceremonia.gif') }}" alt="Ceremonia" class="w-12 h-12">
         </div>
         <div class="text-center mb-4">
-            <p class="text-[#b39b79]">Ceremonia</p>
+            <p class="text-[#b39b79] text-xl font-e">Ceremonia</p>
         </div>
         <div class="h-16 w-1 bg-[#082F49] absolute top-full"></div>
     </div>
@@ -199,7 +204,7 @@
             <img src="{{ asset('storage/drink.gif') }}" alt="Cóctel de Bienvenida" class="w-12 h-12">
         </div>
         <div class="text-center mb-4">
-            <p class="text-[#b39b79]">Cóctel de Bienvenida</p>
+            <p class="text-[#b39b79] text-xl font-e">Cóctel de Bienvenida</p>
         </div>
         <div class="h-16 w-1 bg-[#082F49] absolute top-full"></div>
     </div>
@@ -210,7 +215,7 @@
             <img src="{{ asset('storage/comida.gif') }}" alt="Comida" class="w-14 h-14">
         </div>
         <div class="text-center mb-4">
-            <p class="text-[#b39b79]">Comida</p>
+            <p class="text-[#b39b79] text-xl font-e">Comida</p>
         </div>
         <div class="h-16 w-1 bg-[#082F49] absolute top-full"></div>
     </div>
@@ -222,7 +227,7 @@
             <img src="{{ asset('storage/baile.gif') }}" alt="Cóctel de Bienvenida" class="w-12 h-12">
         </div>
         <div class="text-center">
-            <p class="text-[#b39b79]">Apertura del Baile</p>
+            <p class="text-[#b39b79] text-xl font-e">Apertura del Baile</p>
         </div>
     </div>
 </div>
@@ -239,8 +244,8 @@
 <!-- SECCIÓN FOTOS -->
 <section class="pt-10 px-4 sm:px-8" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <div class="text-center p-8 sm:p-16 md:p-20">
-        <p class="font-bold text-sky-950 text-3xl sm:text-4xl md:text-5xl font-pacifico">Retratos de Nuestro Amor</p>
-        <p class="font-semibold text-teal-700 text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p>
+        <p class=" text-sky-950 text-3xl sm:text-4xl md:text-5xl font-pacifico ">Retratos de Nuestro Amor</p>
+        <p class="font-e text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p>
         <div class="pt-10 flex justify-center">
             <img width="100" height="100" src="https://img.icons8.com/clouds/100/camera.png" class="animated-icon" alt="camera"/>
         </div>
@@ -251,28 +256,28 @@
     <div class="swiper default-carousel swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="bg-gray-200 bg-opacity-80 rounded-5xl flex justify-center items-center">
-                    <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
+                <div class="bg-gray-200 bg-opacity-80 rounded-10xl flex justify-center items-center">
+                    <img src="{{ asset('storage/FotoPrimos.jpg') }}" class="w-full rounded" alt="">
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="bg-indigo-50 rounded-5xl flex justify-center items-center">
-                    <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
+                <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
+                    <img src="{{ asset('storage/FotoPrimos.jpg') }}" class="w-full rounded" alt="">
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="bg-indigo-50 rounded-5xl flex justify-center items-center">
-                    <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
+                <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
+                    <img src="{{ asset('storage/FotoPrimos.jpg') }}" class="w-full rounded" alt="">
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="bg-indigo-50 rounded-5xl flex justify-center items-center">
-                    <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
+                <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
+                    <img src="{{ asset('storage/FotoPrimos.jpg') }}" class="w-full rounded" alt="">
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="bg-indigo-50 rounded-5xl flex justify-center items-center">
-                    <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
+                <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
+                    <img src="{{ asset('storage/FotoPrimos.jpg') }}" class="w-full rounded" alt="">
                 </div>
             </div>
         </div>
@@ -293,7 +298,7 @@
 
 <!-- DRESS CODE -->
 
-<div class="py-20 px-14 max-w-md mx-auto text-center"   style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<div class="py-36 px-14 max-w-md mx-auto text-center"   style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <!-- Icons Section -->
     <div class="flex justify-center mb-4">
         <div class="w-16 h-16">
@@ -303,17 +308,17 @@
     </div>
     
     <!-- Dress Code Title -->
-    <h2 class="text-4xl font-pacifico mb-2">Dress Code</h2>
-    <p class="text-lg text-gray-600 mb-6">Código de Vestimenta</p>
+    <h2 class="text-4xl text-sky-950 font-pacifico mb-2">Dress Code</h2>
+    <p class="text-lg font-e mb-6">Código de Vestimenta</p>
     
     <div class="mt-5">
         <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" class="mb-4" alt="">
         <!-- Dress Code Options -->
         <div class="mb-6">
-            <p class="text-xl text-gray-800 font-semibold">Etiqueta</p>
-            <p class="text-3xl font-bold">Formal</p>
-            <p class="text-xl text-gray-600">Semi-Formal</p>
-            <p class="text-xl text-gray-600">Casual</p>
+            <p class="text-2xl font-e  font-semibold">Etiqueta</p>
+            <p class="text-4xl font-e font-bold">Formal</p>
+            <p class="text-2xl font-e ">Semi-Formal</p>
+            <p class="text-2xl font-e ">Casual</p>
         </div>
 
         <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" alt="">
@@ -327,7 +332,7 @@
 
 <!-- SECCION HOTELES --> 
 
-<div class="bg-gray-50 p-8 py-12 max-w-md mx-auto rounded-lg shadow-md">
+<div class="bg-gray-50 p-8 py-36 max-w-md mx-auto rounded-lg shadow-md" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
   <!-- Icono Maleta -->
     <div class="flex justify-center mb-4">
         <div class="w-16 h-16">
@@ -337,20 +342,20 @@
     </div>
 
   <!-- Título -->
-  <h2 class="text-4xl text-center font-pacifico text-gray-700 mb-4">¿Te quedas a dormir?</h2>
+  <h2 class="text-4xl text-center font-pacifico text-sky-950 mb-4">¿Te quedas a dormir?</h2>
 
   <!-- Texto Descriptivo -->
-  <p class="text-gray-500 text-center mb-6">
+  <p class="text-center mt-5 mb-6 font-e">
     Genial!! Porque también tenemos un plan para los que queréis quedaros, te recomendamos los siguientes hoteles.
   </p>
 
   <!-- Lista de Hoteles -->
-  <div class="space-y-4">
+  <div class="space-y-4 mt-7">
     <!-- Hotel 1 -->
     <div class="text-center">
-      <h3 class="text-2xl font-secondary text-gray-700">Balneario San Nicolás</h3>
+      <h3 class="text-lg ">Balneario San Nicolás</h3>
       <a href="https://balneariosannicolas.net">
-        <button class="border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 px-6 mt-2 ">
+        <button class="border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 mt-2 ">
             Ver Hotel
         </button>
       </a>
@@ -358,9 +363,9 @@
 
     <!-- Hotel 2 -->
     <div class="text-center">
-      <h3 class="text-2xl font-secondary text-gray-700">Fonda Chiquito</h3>
+      <h3 class="text-lg ">Fonda Chiquito</h3>
       <a href="https://www.fondachiquito.es">
-        <button class="border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 px-6 mt-2 ">
+        <button class="border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 mt-2 ">
             Ver Hotel
         </button>
       </a>
@@ -383,14 +388,23 @@
 
 <!-- ALBUN DE BODA -->
 
-<div class="bg-white p-8 py-20 max-w-lg text-center">
-    <h1 class="text-4xl font-secondary font-bold text-gray-900 mb-4">Álbum de boda</h1>
-    <p class="text-lg text-gray-700 mb-6">Os invitamos a nuestro Álbum de Boda.<br>
+<div class="bg-white p-8 py-36 max-w-lg text-center" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+    <h1 class="text-4xl font-pacifico text-sky-950 mb-6">Álbum de boda</h1>
+    <p class="font-e mb-6">Os invitamos a nuestro Álbum de Boda.<br>
         Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.</p>
-    <p class="text-lg text-gray-700 mb-6">Por favor, añade tus fotos y ayuda a construir nuestro tesoro de recuerdos.</p>
+    <p class="font-e mb-10">Por favor, añade tus fotos y ayuda a construir nuestro tesoro de recuerdos.</p>
 
-        <a href="{{ route('verSubirFotos') }}" class=" text-sky-950 border-b-2 border-[#b39b79] py-3 text-lg ">Subir Foto de Boda</a> <br><br>
-        <a href="{{ route('verFotos') }}" class=" text-sky-950 border-b-2 border-[#b39b79] py-3 text-lg ">Ir Álbum de Boda</a>
+    <div class="space-y-7 mt-7">
+        <div class="text-center">
+            <a href="{{ route('verSubirFotos') }}" class=" border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 mt-2 ">Subir Foto de Boda</a>
+        </div>
+
+        <div class="text-center">
+            <a href="{{ route('verFotos') }}" class=" border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 mt-2 ">Ir Álbum de Boda</a>
+        </div>
+  </div>
+        
+        
 </div>
 
 
@@ -400,21 +414,21 @@
 
 <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
 
-<div class="text-center mt-14">
+<div class="text-center mt-14 py-36" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <div class="p-3">
         <!-- Título principal -->
-         <h1 class="text-5xl font-secondary text-gray-900 mb-2">Fiesta</h1>
-        <p class="text-lg text-gray-500 mb-8">
+         <h1 class="text-5xl font-pacifico text-gray-900 mb-6">Fiesta</h1>
+        <p class="font-e mb-8">
             Hagamos juntos una fiesta única.<br>
             Os dejamos algunos detalles a tener en cuenta.
         </p>
 
         <!-- Sección Música -->
-        <div class="bg-white border-gray-900 p-8 max-w-md mx-auto">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Música</h2>
+        <div class=" border-gray-900 p-8 max-w-md mx-auto">
+            <h2 class="text-2xl font-pacifico mb-4">Música</h2>
             <div class="mb-4">
                 <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-12 w-12 text-amber-500 mx-auto mb-4" alt="music"/>
-                <p class="text-gray-600">¿Cuál es la canción que no debe faltar en la playlist de la fiesta?</p>
+                <p class="font-e">¿Cuál es la canción que no debe faltar en la playlist de la fiesta?</p>
             </div>
 
             <button id="openModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 hover:bg-[#b39b79] transition-colors">
@@ -425,8 +439,8 @@
 </div>
 
 <!-- Modal (inicialmente oculto) -->
-<div id="suggestionModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
-    <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-lg">
+<div id="suggestionModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden" >
+    <div class="rounded-lg shadow-xl p-6 w-full max-w-lg">
         <h2 class="text-xl font-semibold text-gray-800 mb-4">Sugerir una Canción</h2>
 
         <form action="{{ route('cancion') }}" method="POST" enctype="multipart/form-data">
@@ -446,7 +460,7 @@
             <!-- Botones de acción -->
             <div class="flex justify-end space-x-4">
                 <button type="button" id="closeModal" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600 transition-colors">Cancelar</button>
-                <button type="submit" class="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition-colors">Enviar</button>
+                <button type="submit" class="bg-sky-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition-colors">Enviar</button>
             </div>
         </form>
     </div>
@@ -462,8 +476,8 @@
 <div class="min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <!-- Form Box -->
     <div class="p-8  rounded-lg shadow-lg w-full max-w-lg">
-        <h2 class="text-3xl font-semibold mb-6 text-center text-gray-800 font-secondary">Confirmar Asistencia</h2>
-        <p class="text-center mb-6 text-gray-600">¡Ojalá contemos contigo! Por favor, completa el formulario y pulsa el botón para ayudarnos a contabilizar tu asistencia.</p>
+        <h2 class="text-3xl  mb-6 text-center text-gray-800 font-pacifico">Confirmar Asistencia</h2>
+        <p class="text-center mb-6 font-e">¡Ojalá contemos contigo! Por favor, completa el formulario y pulsa el botón para ayudarnos a contabilizar tu asistencia.</p>
         
         <form class="space-y-6" action="{{ route('confirmarAsistencia') }}" method="POST" enctype="multipart/form-data">
         @csrf
