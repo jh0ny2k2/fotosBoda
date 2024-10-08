@@ -124,7 +124,7 @@
 
 
 <!-- SECCIÓN INFORMACIÓN -->
-<section class="py-16 bg-white" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<section class="py-24 bg-white" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <div class="max-w-6xl mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <!-- Columna Celebración -->
@@ -298,7 +298,7 @@
 
 <!-- DRESS CODE -->
 
-<div class="py-36 px-14 max-w-md mx-auto text-center"   style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<div class="py-24 px-14 max-w-md mx-auto text-center"   style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <!-- Icons Section -->
     <div class="flex justify-center mb-4">
         <div class="w-16 h-16">
@@ -332,7 +332,7 @@
 
 <!-- SECCION HOTELES --> 
 
-<div class="bg-gray-50 p-8 py-36 max-w-md mx-auto rounded-lg shadow-md" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<div class="bg-gray-50 p-8 py-24 max-w-md mx-auto rounded-lg shadow-md" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
   <!-- Icono Maleta -->
     <div class="flex justify-center mb-4">
         <div class="w-16 h-16">
@@ -386,9 +386,9 @@
 
 
 
-<!-- ALBUN DE BODA -->
+<!-- ALBUM DE BODA -->
 
-<div class="bg-white p-8 py-36 max-w-lg text-center" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<div class="bg-white p-8 py-24 max-w-lg text-center" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <h1 class="text-4xl font-pacifico text-sky-950 mb-6">Álbum de boda</h1>
     <p class="font-e mb-6">Os invitamos a nuestro Álbum de Boda.<br>
         Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.</p>
@@ -414,7 +414,7 @@
 
 <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
 
-<div class="text-center mt-14 py-36" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<div class="text-center mt-14 py-24" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
     <div class="p-3">
         <!-- Título principal -->
          <h1 class="text-5xl font-pacifico text-gray-900 mb-6">Fiesta</h1>
