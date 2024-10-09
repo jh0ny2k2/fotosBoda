@@ -87,13 +87,7 @@
 
     </style>
 </head>
-<body>
-
-
-
-
-
-
+<body >
 
 <!-- Banner -->
 <div class="relative sm:p-16 md:p-20 bg-center bg-gray-200" style="background-image: url('{{ asset('storage/fondo inicio.png') }}'); background-size: cover;">
@@ -110,6 +104,7 @@
     <div class="pt-10 px-1" >
         <img class="rounded-3xl shadow-xl" src="{{ asset('storage/invitacion.png') }}" alt="Invitación">
     </div>
+    
 </div>
 
 
@@ -157,20 +152,20 @@
         </div>
         <div class="flex flex-wrap justify-center rounded-full space-x-4 sm:space-x-6">
             <div class="flex flex-col items-center border-r-0 sm:border-r-2 sm:pr-4 border-black mb-4 sm:mb-0">
-                <span id="days" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
-                <span class="text-xs sm:text-sm text-gray-600 uppercase">Días</span>
+                <span id="days" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
+                <span class="text-xs sm:text-sm text-gray-600">Días</span>
             </div>
             <div class="flex flex-col items-center border-r-0 sm:border-r-2 sm:pr-4 border-black mb-4 sm:mb-0">
-                <span id="hours" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
-                <span class="text-xs sm:text-sm text-gray-600 uppercase">Hs</span>
+                <span id="hours" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
+                <span class="text-xs sm:text-sm text-gray-600">Horas</span>
             </div>
             <div class="flex flex-col items-center border-r-0 sm:border-r-2 sm:pr-4 border-black mb-4 sm:mb-0">
-                <span id="minutes" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
-                <span class="text-xs sm:text-sm text-gray-600 uppercase">Min</span>
+                <span id="minutes" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
+                <span class="text-xs sm:text-sm text-gray-600">Minutos</span>
             </div>
             <div class="flex flex-col items-center">
-                <span id="seconds" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
-                <span class="text-xs sm:text-sm text-gray-600 uppercase">Seg</span>
+                <span id="seconds" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
+                <span class="text-xs sm:text-sm text-gray-600">Segundos</span>
             </div>
         </div>
     </div>
@@ -245,7 +240,7 @@
 </section>
 
 <!-- SECCIÓN INFORMACIÓN -->
-<section class="py-24" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<section class="py-24 ">
     <div class="max-w-6xl mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
 
@@ -279,7 +274,7 @@
 
 
 <!-- SECCIÓN ITINERARIO -->
-<div class="py-16 px-4 sm:px-8 md:px-16 flex flex-col items-center" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<div class="py-16 px-4 sm:px-8 md:px-16 flex flex-col items-center">
     <h3 class="text-3xl text-sky-950 font-pacifico mb-8">Itinerario</h3>
 
     <!-- Item 1: Ceremonia -->
@@ -355,7 +350,7 @@
 
 
 <!-- SECCIÓN FOTOS -->
-<section class="pt-10 px-4 sm:px-8" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<section class="pt-20 pb-32 px-4 sm:px-8" style="background-image: url('{{ asset('storage/fondo1.png') }}'); background-size: cover;">
     <div class="text-center p-8 sm:p-16 md:p-20">
         <p class=" text-sky-950 text-3xl sm:text-4xl md:text-5xl font-pacifico ">Nuestra Historia de Amor</p>
         <p class="font-e text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p>
@@ -416,7 +411,7 @@
 
 <!-- SECCION HOTELES --> 
 
-<div class="bg-gray-50 p-8 py-24 max-w-md mx-auto " >
+<div class=" p-8 py-24 max-w-md mx-auto "  >
 <!-- style="background-image: url('{{ asset('storage/fondo.jpg') }}');" -->
   <!-- Icono Maleta -->
     <div class="flex justify-center mb-4">
@@ -462,7 +457,7 @@
 
 
 <!-- ALBUM DE BODA -->
-<div class="bg-white p-8 py-28 pb-32 max-w-lg text-center" style="background-image: url('{{ asset('storage/novios.png') }}'); background-size: cover;">
+<div class="p-8 py-28 pb-32 text-center" style="background-image: url('{{ asset('storage/novios.png') }}'); background-size: cover;">
     <h1 class="text-4xl font-pacifico text-sky-950 mb-6">Álbum de boda</h1>
     <p class="font-e mb-6">Os invitamos a nuestro Álbum de Boda.<br>
         Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.</p>
@@ -488,7 +483,7 @@
 
 <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
 
-<div class="text-center mt-14 py-18" >
+<div class="text-center mt-14 py-18">
 <!-- style="background-image: url('{{ asset('storage/fondo.jpg') }}');" -->
     <div class="p-3">
         <!-- Título principal -->
@@ -636,9 +631,9 @@
 
 <!-- CONFIRMAR ASISTENCIA -->
 
-<div class="min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('{{ asset('storage/fondo.jpg') }}');">
+<div class="min-h-screen flex items-center justify-center bg-cover bg-center">
     <!-- Form Box -->
-    <div class="p-8  rounded-lg shadow-lg w-full max-w-lg">
+    <div class="p-8   rounded-lg w-full max-w-lg">
         <h2 class="text-3xl  mb-6 text-center text-gray-800 font-pacifico">Confirmar Asistencia</h2>
         <p class="text-center mb-6 font-e">¡Ojalá contemos contigo! Por favor, completa el formulario y pulsa el botón para ayudarnos a contabilizar tu asistencia.</p>
         
