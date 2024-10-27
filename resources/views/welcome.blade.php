@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=New+Amsterdam&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -53,6 +54,12 @@
             font-family: "Indie Flower", serif;
         }
 
+        .font-ser {
+            font-family: "DM Serif Display", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
         .scroll-to-bottom {
             animation: bounce 2s infinite; /* Animación de rebote */
         }
@@ -83,11 +90,68 @@
       .swiper-pagination-bullet {
       background: #4f46e5;
       }
+
+      .volume-slider {
+            -webkit-appearance: none;
+            height: 2px;
+            background: #8B4513;
+        }
+        .volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            background: #8B4513;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .volume-slider::-moz-range-thumb {
+            width: 12px;
+            height: 12px;
+            background: #8B4513;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+        }
       
 
     </style>
 </head>
 <body >
+
+<div id="musicModal" class="fixed inset-0 flex items-center justify-center bg-[#b39b79] bg-opacity-95 z-50">
+    <div class="rounded-lg text-center max-w-xs w-full">
+        <h2 class="text-4xl font-ser font-bold text-white">Bienvenidos a la invitación de <br> Miguel y Jenni</h2>
+        <p class="text-white mt-4 mb-10">La música es parte de la experiencia</p>
+        <button id="withMusic" class="w-full py-2 border-b-2 border-sky-950 text-sky-950 font-medium mb-3">INGRESAR CON MÚSICA</button>
+        <button id="withoutMusic" class="w-full py-2 border-b-2 border-sky-950 text-sky-950 font-medium">INGRESAR SIN MÚSICA</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const musicModal = document.getElementById('musicModal');
+    const withMusicBtn = document.getElementById('withMusic');
+    const withoutMusicBtn = document.getElementById('withoutMusic');
+    const audio = document.getElementById('audio');
+
+    // Show the modal when the page loads
+    musicModal.style.display = 'flex';
+
+    // If "INGRESAR CON MÚSICA" is clicked
+    withMusicBtn.addEventListener('click', () => {
+        audio.volume = document.getElementById('volumeSlider').value;
+        audio.play();
+        musicModal.style.display = 'none';
+    });
+
+    // If "INGRESAR SIN MÚSICA" is clicked
+    withoutMusicBtn.addEventListener('click', () => {
+        audio.pause();
+        musicModal.style.display = 'none';
+    });
+});
+</script>
 
 <!-- Banner -->
 <div class="relative sm:p-16 md:p-20 bg-center bg-gray-200" style="background-image: url('{{ asset('storage/fondo inicio.png') }}'); background-size: cover;">
@@ -170,72 +234,126 @@
         </div>
     </div>
 
-        <p class="mb-4 text-gray-600 font-serif">Haz click para reproducir la música</p>
+    <div class="flex flex-col gap-2 max-w-xs">
+    <h2 class="text-[#8B4513] font-medium">Escucha la Música</h2>
+    
+    <div class="flex items-center gap-3">
+        <audio 
+            id="audio" 
+            src="{{ asset('storage/musica.mp3') }}" 
+            autoplay 
+            loop 
+            playsinline
+            class="hidden"
+        ></audio>
         
-        <div class="flex items-center space-x-4">
-            <!-- Botón de reproducción -->
-            <button id="playPauseBtn" onclick="togglePlay()" class="p-2 rounded">
-                <i class="zmdi zmdi-play"></i>
-            </button>
+        <button 
+            id="playPauseBtn"
+            class="w-6 h-6 flex items-center justify-center"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <rect x="6" y="4" width="4" height="16"/>
+                <rect x="14" y="4" width="4" height="16"/>
+            </svg>
+        </button>
 
-            <!-- Barra de progreso de audio -->
-            <input id="progressBar" type="range" min="0" max="100" value="0" 
-                   class="w-36 h-2 rounded-xl accent-blue-500">
-            
-            <!-- Control de volumen (solo diseño, sin funcionalidad) -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5M12 8.25v7.5M8.25 10.5v3" />
+        <div class="flex items-center flex-1">
+            <div class="h-[2px] bg-gray-200 flex-1 relative">
+                <input
+                    type="range"
+                    id="volumeSlider"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.5"
+                    class="volume-slider absolute inset-0 w-full"
+                >
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-[#8B4513] ml-2">
+                <path d="M11.5 12.5v-1.6l3.1-3.1.7.7-2.8 2.8v1.2z"/>
+                <path d="M15.5 8.5l-.7-.7c1.2-1.2 1.2-3.1 0-4.2l.7-.7c1.5 1.4 1.5 3.9 0 5.6z"/>
+                <path d="M11.5 3.5h-2.7c-.8 0-1.5.7-1.5 1.5v8c0 .8.7 1.5 1.5 1.5h2.7l5.5 5.5V-2z"/>
             </svg>
         </div>
-
-        <!-- Audio -->
-        <audio id="audio">
-            <source src="{{ asset('audio/musica.mp3') }}" type="audio/mp3">
-            Tu navegador no soporta el elemento de audio.
-        </audio>
     </div>
+</div>
 
-    <script>
-        const audio = document.getElementById('audio');
-        const playPauseBtn = document.getElementById('playPauseBtn');
-        const progressBar = document.getElementById('progressBar');
+<script>
+    const audio = document.getElementById('audio');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const volumeSlider = document.getElementById('volumeSlider');
+    let isPlaying = true;
 
-        let isPlaying = false;
+    // Función para iniciar la música
+    function startAudio() {
+        audio.volume = volumeSlider.value;
+        audio.play().then(() => {
+            isPlaying = true;
+            updatePlayButton();
+        }).catch(error => {
+            console.log('Error al reproducir:', error);
+            isPlaying = false;
+            updatePlayButton();
+        });
+    }
 
-        // Función para reproducir o pausar el audio
-        function togglePlay() {
-            if (audio.paused) {
-                audio.play();
-                playPauseBtn.innerHTML = '<i class="zmdi zmdi-pause"></i>';
-                isPlaying = true;
-            } else {
-                audio.pause();
-                playPauseBtn.innerHTML = '<i class="zmdi zmdi-play"></i>';
-                isPlaying = false;
-            }
+    // Intentar iniciar la música de varias formas
+    window.addEventListener('load', startAudio);
+    document.addEventListener('DOMContentLoaded', startAudio);
+    document.addEventListener('click', startAudio, { once: true });
+    document.addEventListener('touchstart', startAudio, { once: true });
+    document.addEventListener('scroll', startAudio, { once: true });
+
+    function updatePlayButton() {
+        if (isPlaying) {
+            playPauseBtn.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <rect x="6" y="4" width="4" height="16"/>
+                    <rect x="14" y="4" width="4" height="16"/>
+                </svg>
+            `;
+        } else {
+            playPauseBtn.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            `;
         }
+    }
 
-        // Iniciar el audio solo después de la primera interacción del usuario
-        document.addEventListener('click', function() {
-            if (!isPlaying) {
-                audio.play();
-                playPauseBtn.innerHTML = '<i class="zmdi zmdi-pause"></i>';
-                isPlaying = true;
-            }
-        });
+    function togglePlay() {
+        if (isPlaying) {
+            audio.pause();
+        } else {
+            audio.play();
+        }
+        isPlaying = !isPlaying;
+        updatePlayButton();
+    }
 
-        // Actualiza la barra de progreso conforme avanza la música
-        audio.addEventListener('timeupdate', function() {
-            const progress = (audio.currentTime / audio.duration) * 100;
-            progressBar.value = progress;
-        });
+    function handleVolumeChange(e) {
+        const volume = e.target.value;
+        audio.volume = volume;
+    }
 
-        // Permite ajustar la posición del audio cuando se mueve la barra de progreso
-        progressBar.addEventListener('input', function() {
-            const seekTime = (progressBar.value / 100) * audio.duration;
-            audio.currentTime = seekTime;
-        });
-    </script>
+    playPauseBtn.addEventListener('click', togglePlay);
+    volumeSlider.addEventListener('input', handleVolumeChange);
+
+    audio.addEventListener('ended', () => {
+        isPlaying = false;
+        updatePlayButton();
+    });
+
+    // Prevenir que la página se pause cuando cambia de pestaña
+    document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+            audio.play();
+        }
+    });
+</script>
+
+
+
 
 </section>
 
