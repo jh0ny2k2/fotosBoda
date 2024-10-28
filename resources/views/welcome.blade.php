@@ -403,7 +403,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -427,7 +427,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -450,7 +450,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -473,7 +473,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -496,7 +496,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -519,7 +519,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -542,7 +542,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -565,7 +565,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -588,7 +588,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -611,7 +611,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -634,7 +634,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -657,7 +657,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -680,7 +680,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -703,7 +703,7 @@
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
                     <!-- Tarjeta -->
