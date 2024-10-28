@@ -119,38 +119,44 @@
 </head>
 <body >
 
+<!-- Modal de bienvenida -->
 <div id="musicModal" class="fixed inset-0 flex items-center justify-center bg-[#b39b79] bg-opacity-95 z-50">
-    <div class="rounded-lg text-center max-w-xs w-full">
-        <h2 class="text-4xl font-ser font-bold text-white">Bienvenidos a la invitación de <br> Miguel y Jenni</h2>
+    <div class="rounded-lg text-center max-w-xs w-full p-6">
+        <h2 class="text-4xl font-serif font-bold text-white mb-4">Bienvenidos a la invitación de <br> Miguel y Jenni</h2>
         <p class="text-white mt-4 mb-10">La música es parte de la experiencia</p>
         <button id="withMusic" class="w-full py-2 border-b-2 border-sky-950 text-sky-950 font-medium mb-3">INGRESAR CON MÚSICA</button>
         <button id="withoutMusic" class="w-full py-2 border-b-2 border-sky-950 text-sky-950 font-medium">INGRESAR SIN MÚSICA</button>
     </div>
 </div>
 
+<!-- Reproductor de audio -->
+<audio id="audio" src="{{ asset('storage/musica.mp3') }}" preload="auto"></audio>
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-    const musicModal = document.getElementById('musicModal');
-    const withMusicBtn = document.getElementById('withMusic');
-    const withoutMusicBtn = document.getElementById('withoutMusic');
-    const audio = document.getElementById('audio');
+        const musicModal = document.getElementById('musicModal');
+        const withMusicBtn = document.getElementById('withMusic');
+        const withoutMusicBtn = document.getElementById('withoutMusic');
+        const audio = document.getElementById('audio');
 
-    // Show the modal when the page loads
-    musicModal.style.display = 'flex';
+        // Mostrar el modal cuando se carga la página
+        musicModal.style.display = 'flex';
 
-    // If "INGRESAR CON MÚSICA" is clicked
-    withMusicBtn.addEventListener('click', () => {
-        audio.volume = document.getElementById('volumeSlider').value;
-        audio.play();
-        musicModal.style.display = 'none';
+        // Si se hace clic en "INGRESAR CON MÚSICA"
+        withMusicBtn.addEventListener('click', () => {
+            audio.volume = 0.5;  // Volumen predeterminado
+            audio.play().catch(error => {
+                console.error("La reproducción automática ha sido bloqueada:", error);
+            });
+            musicModal.style.display = 'none';
+        });
+
+        // Si se hace clic en "INGRESAR SIN MÚSICA"
+        withoutMusicBtn.addEventListener('click', () => {
+            audio.pause();
+            musicModal.style.display = 'none';
+        });
     });
-
-    // If "INGRESAR SIN MÚSICA" is clicked
-    withoutMusicBtn.addEventListener('click', () => {
-        audio.pause();
-        musicModal.style.display = 'none';
-    });
-});
 </script>
 
 <!-- Banner -->
@@ -233,127 +239,6 @@
             </div>
         </div>
     </div>
-
-    <div class="flex flex-col gap-2 max-w-xs">
-    <h2 class="text-[#8B4513] font-medium">Escucha la Música</h2>
-    
-    <div class="flex items-center gap-3">
-        <audio 
-            id="audio" 
-            src="{{ asset('storage/musica.mp3') }}" 
-            autoplay 
-            loop 
-            playsinline
-            class="hidden"
-        ></audio>
-        
-        <button 
-            id="playPauseBtn"
-            class="w-6 h-6 flex items-center justify-center"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                <rect x="6" y="4" width="4" height="16"/>
-                <rect x="14" y="4" width="4" height="16"/>
-            </svg>
-        </button>
-
-        <div class="flex items-center flex-1">
-            <div class="h-[2px] bg-gray-200 flex-1 relative">
-                <input
-                    type="range"
-                    id="volumeSlider"
-                    min="0"
-                    max="1"
-                    step="0.01"
-                    value="0.5"
-                    class="volume-slider absolute inset-0 w-full"
-                >
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-[#8B4513] ml-2">
-                <path d="M11.5 12.5v-1.6l3.1-3.1.7.7-2.8 2.8v1.2z"/>
-                <path d="M15.5 8.5l-.7-.7c1.2-1.2 1.2-3.1 0-4.2l.7-.7c1.5 1.4 1.5 3.9 0 5.6z"/>
-                <path d="M11.5 3.5h-2.7c-.8 0-1.5.7-1.5 1.5v8c0 .8.7 1.5 1.5 1.5h2.7l5.5 5.5V-2z"/>
-            </svg>
-        </div>
-    </div>
-</div>
-
-<script>
-    const audio = document.getElementById('audio');
-    const playPauseBtn = document.getElementById('playPauseBtn');
-    const volumeSlider = document.getElementById('volumeSlider');
-    let isPlaying = true;
-
-    // Función para iniciar la música
-    function startAudio() {
-        audio.volume = volumeSlider.value;
-        audio.play().then(() => {
-            isPlaying = true;
-            updatePlayButton();
-        }).catch(error => {
-            console.log('Error al reproducir:', error);
-            isPlaying = false;
-            updatePlayButton();
-        });
-    }
-
-    // Intentar iniciar la música de varias formas
-    window.addEventListener('load', startAudio);
-    document.addEventListener('DOMContentLoaded', startAudio);
-    document.addEventListener('click', startAudio, { once: true });
-    document.addEventListener('touchstart', startAudio, { once: true });
-    document.addEventListener('scroll', startAudio, { once: true });
-
-    function updatePlayButton() {
-        if (isPlaying) {
-            playPauseBtn.innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                    <rect x="6" y="4" width="4" height="16"/>
-                    <rect x="14" y="4" width="4" height="16"/>
-                </svg>
-            `;
-        } else {
-            playPauseBtn.innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                    <path d="M8 5v14l11-7z"/>
-                </svg>
-            `;
-        }
-    }
-
-    function togglePlay() {
-        if (isPlaying) {
-            audio.pause();
-        } else {
-            audio.play();
-        }
-        isPlaying = !isPlaying;
-        updatePlayButton();
-    }
-
-    function handleVolumeChange(e) {
-        const volume = e.target.value;
-        audio.volume = volume;
-    }
-
-    playPauseBtn.addEventListener('click', togglePlay);
-    volumeSlider.addEventListener('input', handleVolumeChange);
-
-    audio.addEventListener('ended', () => {
-        isPlaying = false;
-        updatePlayButton();
-    });
-
-    // Prevenir que la página se pause cuando cambia de pestaña
-    document.addEventListener("visibilitychange", function() {
-        if (document.hidden) {
-            audio.play();
-        }
-    });
-</script>
-
-
-
 
 </section>
 
