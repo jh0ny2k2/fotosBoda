@@ -402,8 +402,8 @@
                 <!-- Primer evento -->
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -426,8 +426,8 @@
                 <!-- Segundo evento -->
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -449,8 +449,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -472,8 +472,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -495,8 +495,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -518,8 +518,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -541,8 +541,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -564,8 +564,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -587,8 +587,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -610,8 +610,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -633,8 +633,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -656,8 +656,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -679,8 +679,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -702,8 +702,8 @@
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]">♥</div>
                     </div>
                     
                     <!-- Tarjeta -->
@@ -717,7 +717,7 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-sm mb-2">Dec 28 2015</div>
+                            <div class="text-gray-500 font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2015</div>
                             <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
                         </div>
                     </div>
