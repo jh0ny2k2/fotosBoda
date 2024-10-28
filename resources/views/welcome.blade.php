@@ -381,7 +381,8 @@
 
 
     <!-- SECCIÓN FOTOS -->
-    <section class="pt-20 pb-32 px-4 sm:px-8" style="background-image: url('{{ asset('storage/fondo1.png') }}'); background-size: cover;">
+    <section class="pt-20 pb-32 px-4 sm:px-8" >
+        <!-- style="background-image: url('{{ asset('storage/fondo1.png') }}'); background-size: cover;" -->
         <div class="text-center p-8 sm:p-16 md:p-20">
             <p class=" text-sky-950 text-3xl sm:text-4xl md:text-5xl font-pacifico ">Nuestra Historia de Amor</p>
             <p class="font-e text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p>
@@ -390,7 +391,342 @@
             </div>
         </div>
 
-        <div class="w-full relative">
+        <div class="max-w-2xl mx-auto p-4">
+        <!-- Timeline container con línea vertical -->
+        <div class="relative py-8 px-4">
+            <!-- Línea vertical -->
+            <div class="absolute left-4 top-0 bottom-0 w-px bg-gray-200"></div>
+            
+            <!-- Elementos del timeline -->
+            <div class="space-y-12">
+                <!-- Primer evento -->
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/1,1.jpg') }}" 
+                                 alt="Primera reunión" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2009</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Our first meeting</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segundo evento -->
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/2.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Enero</span> 2010</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/3,1.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2015</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/4,1.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2016</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/5.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2016</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/6,1.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Enero</span> 2017</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/7.jpeg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Mayo</span> 2018</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/8,1.jpeg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2018</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/9,1.jpeg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2018</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/10.jpeg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Diciembre</span> 2019</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/11.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2023</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/12,1.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Diciembre</span> 2023</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/13,1.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-pink-400 flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full bg-pink-300"></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/14.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-sm mb-2">Dec 28 2015</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- <div class="w-full relative">
             <div class="swiper default-carousel swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -422,7 +758,7 @@
             </div>
         </div>
 
-        <p class="text-center text-gray-500 mt-2">Desliza a la izquierda para ver más imágenes</p>
+        <p class="text-center text-gray-500 mt-2">Desliza a la izquierda para ver más imágenes</p> -->
 
     </section>
 
