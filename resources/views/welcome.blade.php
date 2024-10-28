@@ -268,7 +268,7 @@
             <div class="flex flex-wrap justify-center rounded-full space-x-4 sm:space-x-6">
                 <div class="flex flex-col items-center border-r-0 sm:border-r-2 sm:pr-4 border-black mb-4 sm:mb-0">
                     <span id="days" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
-                    <span class="text-xs sm:text-sm text-gray-600">Díasw</span>
+                    <span class="text-xs sm:text-sm text-gray-600">Días</span>
                 </div>
                 <div class="flex flex-col items-center border-r-0 sm:border-r-2 sm:pr-4 border-black mb-4 sm:mb-0">
                     <span id="hours" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
