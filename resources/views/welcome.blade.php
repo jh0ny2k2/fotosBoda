@@ -164,7 +164,7 @@
     </style>
 </head>
 
-<body>
+<body style="background-image: url('{{ asset('storage/mapafondo.png') }}'); background-size: cover;">
 
     <!-- MODAL DE BIENVENIDA PARA PONER MUSICA O NO -->
     <div id="musicModal" class="fixed inset-0 flex items-center justify-center bg-[#b39b79] bg-opacity-95 z-50">
@@ -384,11 +384,12 @@
     <section class="pt-20 pb-32 px-4 sm:px-8" >
         <!-- style="background-image: url('{{ asset('storage/fondo1.png') }}'); background-size: cover;" -->
         <div class="text-center p-8 sm:p-16 md:p-20">
-            <p class=" text-sky-950 text-3xl sm:text-4xl md:text-5xl font-pacifico ">Nuestra Historia de Amor</p>
-            <p class="font-e text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p>
-            <div class="pt-10 flex justify-center">
+            <div class="pt-10 flex justify-center pb-5">
                 <img width="100" height="100" src="https://img.icons8.com/clouds/100/camera.png" class="animated-icon" alt="camera" />
             </div>
+
+            <p class=" text-sky-950 text-3xl sm:text-4xl md:text-5xl font-pacifico ">Nuestra Historia de Amor</p>
+            <!-- <p class="font-e text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p> -->
         </div>
 
         <div class="max-w-2xl mx-auto p-4">
@@ -407,7 +408,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-lg shadow-[#beb9b2] overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/1,1.jpg') }}" 
@@ -431,7 +432,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2] overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/2.jpg') }}" 
@@ -454,7 +455,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/3,1.jpg') }}" 
@@ -477,7 +478,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2] overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/4,1.jpg') }}" 
@@ -500,7 +501,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/5.jpg') }}" 
@@ -523,7 +524,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2] overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/6,1.jpg') }}" 
@@ -569,7 +570,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/8,1.jpeg') }}" 
@@ -592,7 +593,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/9,1.jpeg') }}" 
@@ -615,7 +616,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/10.jpeg') }}" 
@@ -638,7 +639,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/11.jpg') }}" 
@@ -661,7 +662,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/12,1.jpg') }}" 
@@ -684,7 +685,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/13,1.jpg') }}" 
@@ -707,7 +708,7 @@
                     </div>
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm">
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/14.jpg') }}" 
@@ -717,7 +718,7 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2015</div>
+                            <div class="text-gray-500 font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
                             <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
                         </div>
                     </div>
@@ -841,32 +842,34 @@
                 Os dejamos algunos detalles a tener en cuenta.
             </p>
 
-            <!-- SECCION DE MUSICA -->
-            <div class=" border-gray-900 p-8 max-w-md mx-auto">
-                <h2 class="text-3xl font-secondary font-bold mb-4">Música</h2>
-                <div class="mb-4">
-                    <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music" />
-                    <p class="font-e">¿Cuál es la canción que no debe faltar en la playlist de la fiesta?</p>
+            <div class="p-5">
+                <!-- SECCION DE MUSICA -->
+                <div class="py-20 px-8  rounded-xl max-w-md mx-auto">
+                    <h2 class="text-3xl font-secondary font-bold mb-4">Música</h2>
+                    <div class="mb-4">
+                        <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music" />
+                        <p class="font-e">¿Cuál es la canción que no debe faltar en la playlist de la fiesta?</p>
+                    </div>
+
+                    <!-- BOTON PARA ABRIR MODAL DE SUGERIR MUSICA -->
+                    <button id="openModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 transition-colors">
+                        Sugerir Canción
+                    </button>
                 </div>
 
-                <!-- BOTON PARA ABRIR MODAL DE SUGERIR MUSICA -->
-                <button id="openModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 hover:bg-[#b39b79] transition-colors">
-                    Sugerir Canción
-                </button>
-            </div>
+                <!-- SECCION DE DRESS CODE -->
+                <div class="py-20 px-8 mt-8   rounded-xl p-8 max-w-md mx-auto">
+                    <h2 class="text-3xl font-secondary font-bold">Dress Code</h2>
+                    <h2 class="text-lg font-e mb-4">Código de Vestimenta</h2>
+                    <div class="mb-4">
+                        <img width="158" height="158" src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="dress-code-icon" />
+                    </div>
 
-            <!-- SECCION DE DRESS CODE -->
-            <div class="border-gray-900 p-8 max-w-md mx-auto">
-                <h2 class="text-3xl font-secondary font-bold">Dress Code</h2>
-                <h2 class="text-lg font-e mb-4">Código de Vestimenta</h2>
-                <div class="mb-4">
-                    <img width="158" height="158" src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="dress-code-icon" />
+                    <!-- BOTON PARA ABRIR EL MODAL DE DRESS CODE -->
+                    <button id="openDressCodeModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 transition-colors">
+                        Ver Dress Code
+                    </button>
                 </div>
-
-                <!-- BOTON PARA ABRIR EL MODAL DE DRESS CODE -->
-                <button id="openDressCodeModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 hover:bg-[#b39b79] transition-colors">
-                    Ver Dress Code
-                </button>
             </div>
 
             <!-- MODAL DE DRESS CODE -->
@@ -1041,7 +1044,7 @@
 
 
     <!-- DESPEDIDA GRACIAS -->
-    <div class="flex flex-col items-center justify-center py-12 bg-white text-center">
+    <div class="flex flex-col items-center justify-center py-12 text-center">
 
         <div class="text-3xl font-pacifico text-gray-800 mt-4">
             <p>Miguel</p>
@@ -1052,14 +1055,14 @@
         </div>
 
         <div class="text-3xl font-pacifico text-gray-800 mt-2 mb-4">
-            <p>Jeni</p>
+            <p>Jenni</p>
         </div>
 
         <div class="w-80 my-6 border-t border-dashed border-[#b39b79]"></div>
 
         <div class="text-lg text-gray-700 mt-8 mb-4">
             <p class="font-secondary ">GRACIAS</p>
-            <p class="">por acompañarnos en un día tan especial</p>
+            <p class="font-e">por acompañarnos en un día tan especial</p>
         </div>
     </div>
 
