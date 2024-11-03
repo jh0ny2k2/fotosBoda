@@ -493,7 +493,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2015</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Juntos crecimos ...</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Juntos crecimos ...</h3>
                         </div>
                     </div>
                 </div>
@@ -516,7 +516,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2016</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">y descubrimos ...</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">y descubrimos ...</h3>
                         </div>
                     </div>
                 </div>
@@ -539,7 +539,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2016</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">entre otras cosas ...</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">entre otras cosas ...</h3>
                         </div>
                     </div>
                 </div>
@@ -562,7 +562,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Enero</span> 2017</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Nuestra pasión por viajar</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Nuestra pasión por viajar</h3>
                         </div>
                     </div>
                 </div>
@@ -585,7 +585,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Mayo</span> 2018</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2"></h3>
                         </div>
                     </div>
                 </div>
@@ -608,7 +608,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2018</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2"></h3>
                         </div>
                     </div>
                 </div>
@@ -631,7 +631,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Diciembre</span> 2019</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2"></h3>
                         </div>
                     </div>
                 </div>
@@ -654,7 +654,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2023</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e"></h3>
                         </div>
                     </div>
                 </div>
@@ -677,7 +677,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2"></h3>
                         </div>
                     </div>
                 </div>
@@ -700,7 +700,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2020</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Tras muchas experiencias comenzamos una nueva etapa</h3>
                         </div>
                     </div>
                 </div>
@@ -723,7 +723,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2021</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Pronto la familia aumentó ...</h3>
                         </div>
                     </div>
                 </div>
@@ -746,7 +746,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Diciembre</span> 2023</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e ">Aunque no de la forma que muchos esperabais</h3>
                         </div>
                     </div>
                 </div>
@@ -791,7 +791,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Y por fin ... 15 años despues, decidimos dar el gran paso!</h3>
                         </div>
                     </div>
                 </div>
