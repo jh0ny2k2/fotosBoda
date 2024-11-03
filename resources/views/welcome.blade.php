@@ -516,7 +516,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2016</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">y descubrimos ...</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Y descubrimos ...</h3>
                         </div>
                     </div>
                 </div>
@@ -539,7 +539,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2016</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">entre otras cosas ...</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Entre otras cosas ...</h3>
                         </div>
                     </div>
                 </div>
