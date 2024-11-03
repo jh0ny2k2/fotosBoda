@@ -216,7 +216,7 @@
     <!-- MODAL DE BIENVENIDA PARA PONER MUSICA O NO -->
     <div id="musicModal" class="fixed inset-0 flex items-center justify-center bg-[#b39b79] bg-opacity-95 z-50">
         <div class="rounded-lg text-center max-w-xs w-full p-6 flex flex-col items-center">
-            <img src="{{ asset('storage/fondoPrimo.png') }}" class="w-24 h-24 mb-4" alt="Logo Boda">
+            <img src="{{ asset('storage/logooo.png') }}" class=" mb-4" alt="Logo Boda">
             <h2 class="text-4xl font-serif font-bold text-sky-950 mb-4">Bienvenidos a la invitación de <br> Miguel y Jenni</h2>
             <p class="text-sky-950 mt-4 mb-10">La música es parte de la experiencia</p>
             <button id="withMusic" class="w-full py-2 border-b-2 border-sky-950 text-sky-950 font-medium mb-3">INGRESAR CON MÚSICA</button>
@@ -324,8 +324,8 @@
                     <span class="text-xs sm:text-sm text-gray-600">Horas</span>
                 </div>
                 <div class="flex flex-col items-center border-r-0 border-black mb-4 sm:mb-0">
-                    <span id="minutes" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
-                    <span class="text-xs sm:text-sm text-gray-600">Minutos</span>
+                    <span id="minutes" class="text-4xl font-e sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
+                    <span class="text-xs  sm:text-sm text-gray-600">Minutos</span>
                 </div>
                 <div class="flex flex-col items-center">
                     <span id="seconds" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
@@ -365,7 +365,7 @@
 
     <!-- SECCIÓN ITINERARIO -->
     <div class="py-16 px-4 sm:px-8 md:px-16 flex flex-col items-center">
-        <h3 class="text-3xl text-sky-950 font-pacifico mb-8">Itinerario</h3>
+        <h3 class="text-3xl text-sky-950 font-pacifico mb-4">Itinerario</h3>
 
         <!-- CEREMONIA -->
         <div class="flex flex-col items-center relative mb-12">
@@ -468,34 +468,12 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2009</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Our first meeting</h3>
+                            <h3 class="text-gray-700 font-e text-xl font-medium mb-2">Nos conocimos siendo solo unos niños</h3>
                         </div>
                     </div>
                 </div>
 
-                <!-- Segundo evento -->
-                <div class="relative pl-8 mb-12">
-                    <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
-                    </div>
-                    
-                    <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2] overflow-hidden max-w-sm">
-                        <!-- Imagen -->
-                        <div class="w-full h-48 overflow-hidden">
-                            <img src="{{ asset('storage/2.jpg') }}" 
-                                 alt="Días de invierno" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        
-                        <!-- Contenido -->
-                        <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Enero</span> 2010</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
@@ -515,7 +493,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2015</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Juntos crecimos ...</h3>
                         </div>
                     </div>
                 </div>
@@ -538,7 +516,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2016</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">y descubrimos ...</h3>
                         </div>
                     </div>
                 </div>
@@ -561,7 +539,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2016</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">entre otras cosas ...</h3>
                         </div>
                     </div>
                 </div>
@@ -584,7 +562,7 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Enero</span> 2017</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Nuestra pasión por viajar</h3>
                         </div>
                     </div>
                 </div>
@@ -607,29 +585,6 @@
                         <!-- Contenido -->
                         <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Mayo</span> 2018</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative pl-8 mb-12">
-                    <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
-                    </div>
-                    
-                    <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
-                        <!-- Imagen -->
-                        <div class="w-full h-48 overflow-hidden">
-                            <img src="{{ asset('storage/8,1.jpeg') }}" 
-                                 alt="Días de invierno" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        
-                        <!-- Contenido -->
-                        <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2018</div>
                             <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
                         </div>
                     </div>
@@ -711,6 +666,75 @@
                     </div>
                     
                     <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2] overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/8.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2] overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/2.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2020</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2] overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/2.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2021</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <!-- Círculo rosa (corazón) -->
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
                     <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
                         <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
@@ -727,28 +751,27 @@
                     </div>
                 </div>
 
-                <div class="relative pl-8 mb-12">
-                    <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
-                    </div>
+                <!-- <div class="relative pl-8 mb-12"> -->
+                    <!-- <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div> -->
+                    <!-- </div> -->
                     
                     <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
+                    <!-- <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm"> -->
                         <!-- Imagen -->
-                        <div class="w-full h-48 overflow-hidden">
+                        <!-- <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/13,1.jpg') }}" 
                                  alt="Días de invierno" 
                                  class="w-full h-full object-cover">
-                        </div>
+                        </div> -->
                         
                         <!-- Contenido -->
-                        <div class="p-4">
+                        <!-- <div class="p-4">
                             <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
                             <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
@@ -885,7 +908,7 @@
     <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
     <div class="text-center mt-14 py-18">
         <div class="p-3">
-            <h1 class="text-5xl font-pacifico text-sky-900 mb-6">Fiesta</h1>
+            <h1 class="text-5xl font-pacifico text-sky-950 mb-6">Fiesta</h1>
             <p class="font-e mb-8">
                 Hagamos juntos una fiesta única.<br>
                 Os dejamos algunos detalles a tener en cuenta.
