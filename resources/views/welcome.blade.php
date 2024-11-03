@@ -32,6 +32,24 @@
 
     <!-- ESTILOS EXTRAS -->
     <style>
+    
+        #recommendationScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 20px;
+        }
+
         html,
         body {
             height: 100%;
@@ -166,15 +184,46 @@
 
 <body style="background-image: url('{{ asset('storage/mapafondo.png') }}'); background-size: cover;">
 
+<div id="recommendationScreen" class="font-secondary">
+        <div class="fixed inset-0 bg-[#b39b79] bg-opacity-90 flex flex-col items-center justify-center text-center p-6">
+            <img src="{{ asset('storage/fondoPrimo.png') }}" alt="Logo Boda">
+            <p>Para una mejor inmersión, <br> recomendamos ver esta página desde un dispositivo móvil o tablet.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Verificar si el ancho de la pantalla es mayor a 1024 píxeles (escritorio)
+            if (window.innerWidth > 1024) {
+                // Mantener la pantalla de recomendación visible en dispositivos de escritorio
+                document.getElementById("recommendationScreen").style.display = "flex";
+            } else {
+                // Ocultar la pantalla de recomendación en dispositivos móviles y tablets
+                document.getElementById("recommendationScreen").style.display = "none";
+            }
+        });
+
+        // Actualizar la pantalla de recomendación al cambiar el tamaño de la ventana
+        window.addEventListener("resize", function() {
+            if (window.innerWidth > 1024) {
+                document.getElementById("recommendationScreen").style.display = "flex";
+            } else {
+                document.getElementById("recommendationScreen").style.display = "none";
+            }
+        });
+    </script>
+
     <!-- MODAL DE BIENVENIDA PARA PONER MUSICA O NO -->
     <div id="musicModal" class="fixed inset-0 flex items-center justify-center bg-[#b39b79] bg-opacity-95 z-50">
-        <div class="rounded-lg text-center max-w-xs w-full p-6">
-            <h2 class="text-4xl font-serif font-bold text-white mb-4">Bienvenidos a la invitación de <br> Miguel y Jenni</h2>
-            <p class="text-white mt-4 mb-10">La música es parte de la experiencia</p>
+        <div class="rounded-lg text-center max-w-xs w-full p-6 flex flex-col items-center">
+            <img src="{{ asset('storage/fondoPrimo.png') }}" class="w-24 h-24 mb-4" alt="Logo Boda">
+            <h2 class="text-4xl font-serif font-bold text-sky-950 mb-4">Bienvenidos a la invitación de <br> Miguel y Jenni</h2>
+            <p class="text-sky-950 mt-4 mb-10">La música es parte de la experiencia</p>
             <button id="withMusic" class="w-full py-2 border-b-2 border-sky-950 text-sky-950 font-medium mb-3">INGRESAR CON MÚSICA</button>
             <button id="withoutMusic" class="w-full py-2 border-b-2 border-sky-950 text-sky-950 font-medium">INGRESAR SIN MÚSICA</button>
         </div>
     </div>
+
 
     <!-- REPRODUCTOR DEL AUDIO -->
     <audio id="audio" src="{{ asset('storage/musica.mp3') }}" preload="auto"></audio>
@@ -266,15 +315,15 @@
                 <span class="font-secondary text-sky-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Cuanto Falta Para el Viaje</span>
             </div>
             <div class="flex flex-wrap justify-center rounded-full space-x-4 sm:space-x-6">
-                <div class="flex flex-col items-center border-r-0 sm:border-r-2 sm:pr-4 border-black mb-4 sm:mb-0">
+                <div class="flex flex-col items-center border-r-0 border-black mb-4 sm:mb-0">
                     <span id="days" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
                     <span class="text-xs sm:text-sm text-gray-600">Días</span>
                 </div>
-                <div class="flex flex-col items-center border-r-0 sm:border-r-2 sm:pr-4 border-black mb-4 sm:mb-0">
+                <div class="flex flex-col items-center border-r-0 border-black mb-4 sm:mb-0">
                     <span id="hours" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
                     <span class="text-xs sm:text-sm text-gray-600">Horas</span>
                 </div>
-                <div class="flex flex-col items-center border-r-0 sm:border-r-2 sm:pr-4 border-black mb-4 sm:mb-0">
+                <div class="flex flex-col items-center border-r-0 border-black mb-4 sm:mb-0">
                     <span id="minutes" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
                     <span class="text-xs sm:text-sm text-gray-600">Minutos</span>
                 </div>
@@ -392,7 +441,7 @@
             <!-- <p class="font-e text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p> -->
         </div>
 
-        <div class="max-w-2xl mx-auto p-4">
+        <div class="max-w-3xl mx-auto p-4">
         <!-- Timeline container con línea vertical -->
         <div class="relative py-8 px-4">
             <!-- Línea vertical -->
@@ -808,7 +857,7 @@
 
 
     <!-- ALBUM DE BODA -->
-    <div class="p-8 py-28 pb-32 text-center" style="background-image: url('{{ asset('storage/novios.png') }}'); background-size: cover;">
+    <div class="p-8 py-32 pb-36 text-center" style="background-image: url('{{ asset('storage/novios.png') }}'); background-size: cover;">
         <h1 class="text-4xl font-pacifico text-sky-950 mb-6">Álbum de boda</h1>
         <p class="font-e mb-6">Os invitamos a nuestro Álbum de Boda.<br>
             Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.</p>
@@ -858,18 +907,18 @@
                 </div>
 
                 <!-- SECCION DE DRESS CODE -->
-                <div class="py-20 px-8 mt-8   rounded-xl p-8 max-w-md mx-auto">
+                <!-- <div class="py-20 px-8 mt-8   rounded-xl p-8 max-w-md mx-auto">
                     <h2 class="text-3xl font-secondary font-bold">Dress Code</h2>
                     <h2 class="text-lg font-e mb-4">Código de Vestimenta</h2>
                     <div class="mb-4">
                         <img width="158" height="158" src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="dress-code-icon" />
-                    </div>
+                    </div> -->
 
                     <!-- BOTON PARA ABRIR EL MODAL DE DRESS CODE -->
-                    <button id="openDressCodeModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 transition-colors">
+                    <!-- <button id="openDressCodeModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 transition-colors">
                         Ver Dress Code
                     </button>
-                </div>
+                </div> -->
             </div>
 
             <!-- MODAL DE DRESS CODE -->
