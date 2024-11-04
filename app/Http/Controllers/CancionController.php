@@ -11,7 +11,7 @@ class CancionController extends Controller
     {
         
         $cancion = new Cancion();
-        $cancion->nombre = $request->nombre;
+        $cancion->nombre = $request->cancion;
         if ($request->has('url')){
             $cancion->url = $request->url;
         }
