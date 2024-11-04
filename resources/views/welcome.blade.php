@@ -900,7 +900,7 @@
 
 
     <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
-    <div class="text-center mt-14 py-18">
+    <div class="text-center mt-16 mb-16 py-18">
         <div class="p-3">
             <h1 class="text-4xl text-sky-950 font-pacifico mb-4">Fiesta</h1>
             <p class="font-e mb-8">
@@ -910,7 +910,7 @@
 
             <div class="p-5">
                 <!-- SECCION DE MUSICA -->
-                <div class="py-20 px-8  rounded-xl max-w-md mx-auto">
+                <div class="py-8 px-8  rounded-xl max-w-md mx-auto">
                     <h2 class="text-3xl font-secondary font-bold mb-4">Música</h2>
                     <div class="mb-4">
                         <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music" />
