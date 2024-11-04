@@ -186,7 +186,7 @@
 
 <div id="recommendationScreen" class="font-secondary">
         <div class="fixed inset-0 bg-[#b39b79] bg-opacity-90 flex flex-col items-center justify-center text-center p-6">
-            <img src="{{ asset('storage/fondoPrimo.png') }}" alt="Logo Boda">
+            <img src="{{ asset('storage/logoooo.png') }}" class="w-52 h-52" alt="Logo Boda">
             <p>Para una mejor inmersión, <br> recomendamos ver esta página desde un dispositivo móvil o tablet.</p>
         </div>
     </div>
@@ -216,11 +216,11 @@
     <!-- MODAL DE BIENVENIDA PARA PONER MUSICA O NO -->
     <div id="musicModal" class="fixed inset-0 flex items-center justify-center bg-[#b39b79] bg-opacity-95 z-50">
         <div class="rounded-lg text-center max-w-xs w-full p-6 flex flex-col items-center">
-            <img src="{{ asset('storage/logooo.png') }}" class=" mb-4" alt="Logo Boda">
-            <h2 class="text-4xl font-serif font-bold text-sky-950 mb-4">Bienvenidos a la invitación de <br> Miguel y Jenni</h2>
-            <p class="text-sky-950 mt-4 mb-10">La música es parte de la experiencia</p>
-            <button id="withMusic" class="w-full py-2 border-b-2 border-sky-950 text-sky-950 font-medium mb-3">INGRESAR CON MÚSICA</button>
-            <button id="withoutMusic" class="w-full py-2 border-b-2 border-sky-950 text-sky-950 font-medium">INGRESAR SIN MÚSICA</button>
+            <img src="{{ asset('storage/logoooo.png') }}" class="p-4 w-52 h-52 mb-4" alt="Logo Boda">
+            <h2 class="text-4xl font-serif font-bold  mb-4">Bienvenidos a la invitación de <br> Miguel y Jenni</h2>
+            <p class=" mt-4 mb-10">La música es parte de la experiencia</p>
+            <button id="withMusic" class="w-full py-2 border-b-2 border-gray-950  font-medium mb-3">INGRESAR CON MÚSICA</button>
+            <button id="withoutMusic" class="w-full py-2 border-b-2 border-gray-950  font-medium">INGRESAR SIN MÚSICA</button>
         </div>
     </div>
 
@@ -324,7 +324,7 @@
                     <span class="text-xs sm:text-sm text-gray-600">Horas</span>
                 </div>
                 <div class="flex flex-col items-center border-r-0 border-black mb-4 sm:mb-0">
-                    <span id="minutes" class="text-4xl font-e sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
+                    <span id="minutes" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
                     <span class="text-xs  sm:text-sm text-gray-600">Minutos</span>
                 </div>
                 <div class="flex flex-col items-center">
@@ -365,7 +365,7 @@
 
     <!-- SECCIÓN ITINERARIO -->
     <div class="py-16 px-4 sm:px-8 md:px-16 flex flex-col items-center">
-        <h3 class="text-3xl text-sky-950 font-pacifico mb-4">Itinerario</h3>
+        <h3 class="text-4xl text-sky-950 font-pacifico mb-4">Itinerario</h3>
 
         <!-- CEREMONIA -->
         <div class="flex flex-col items-center relative mb-12">
@@ -437,7 +437,7 @@
                 <img width="100" height="100" src="https://img.icons8.com/clouds/100/camera.png" class="animated-icon" alt="camera" />
             </div>
 
-            <p class=" text-sky-950 text-3xl sm:text-4xl md:text-5xl font-pacifico ">Nuestra Historia de Amor</p>
+            <p class=" text-3xl text-sky-950 font-pacifico mb-4">Nuestra Historia de Amor</p>
             <!-- <p class="font-e text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p> -->
         </div>
 
@@ -467,8 +467,8 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2009</div>
-                            <h3 class="text-gray-700 font-e text-xl font-medium mb-2">Nos conocimos siendo solo unos niños</h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950" ><span class="text-[#b39b79] ">Julio</span> 2009</div>
+                            <h3 class="text-gray-700 font-e text-xl font-medium mb-2 text-sky-950">Nos conocimos siendo solo unos niños</h3>
                         </div>
                     </div>
                 </div>
@@ -492,8 +492,8 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2015</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Juntos crecimos ...</h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Junio</span> 2015</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e text-sky-950">Juntos crecimos ...</h3>
                         </div>
                     </div>
                 </div>
@@ -515,8 +515,8 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2016</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Y descubrimos ...</h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Junio</span> 2016</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e text-sky-950">Y descubrimos ...</h3>
                         </div>
                     </div>
                 </div>
@@ -538,8 +538,8 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2016</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Entre otras cosas ...</h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Junio</span> 2016</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e text-sky-950">Entre otras cosas ...</h3>
                         </div>
                     </div>
                 </div>
@@ -561,8 +561,8 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Enero</span> 2017</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Nuestra pasión por viajar</h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Enero</span> 2017</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e text-sky-950">Nuestra pasión por viajar</h3>
                         </div>
                     </div>
                 </div>
@@ -607,8 +607,8 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2018</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2"></h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Julio</span> 2018</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 text-sky-950"></h3>
                         </div>
                     </div>
                 </div>
@@ -630,37 +630,32 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Diciembre</span> 2019</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2"></h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Diciembre</span> 2019</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 text-sky-950"></h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 mb-12">
-                    <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
                         <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
                     
-                    <!-- Tarjeta -->
                     <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm">
-                        <!-- Imagen -->
                         <div class="w-full h-48 overflow-hidden">
                             <img src="{{ asset('storage/11.jpg') }}" 
                                  alt="Días de invierno" 
                                  class="w-full h-full object-cover">
                         </div>
                         
-                        <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2023</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e"></h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Julio</span> 2023</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e text-sky-950"></h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 mb-12">
-                    <!-- Círculo rosa (corazón) -->
                     <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
                         <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
                     </div>
@@ -676,8 +671,30 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2"></h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 text-sky-950"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 mb-12">
+                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
+                    </div>
+                    
+                    <!-- Tarjeta -->
+                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2] overflow-hidden max-w-sm">
+                        <!-- Imagen -->
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="{{ asset('storage/15.jpg') }}" 
+                                 alt="Días de invierno" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Contenido -->
+                        <div class="p-4">
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Julio</span> 2020</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e text-sky-950">Tras muchas experiencias comenzamos una nueva etapa</h3>
                         </div>
                     </div>
                 </div>
@@ -699,31 +716,8 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Julio</span> 2020</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Tras muchas experiencias comenzamos una nueva etapa</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative pl-8 mb-12">
-                    <!-- Círculo rosa (corazón) -->
-                    <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div>
-                    </div>
-                    
-                    <!-- Tarjeta -->
-                    <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2] overflow-hidden max-w-sm">
-                        <!-- Imagen -->
-                        <div class="w-full h-48 overflow-hidden">
-                            <img src="{{ asset('storage/2.jpg') }}" 
-                                 alt="Días de invierno" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        
-                        <!-- Contenido -->
-                        <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Junio</span> 2021</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Pronto la familia aumentó ...</h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Junio</span> 2021</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e text-sky-950">Pronto la familia aumentó ...</h3>
                         </div>
                     </div>
                 </div>
@@ -745,8 +739,8 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Diciembre</span> 2023</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e ">Aunque no de la forma que muchos esperabais</h3>
+                            <div class="text-gray-500 text-lg font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Diciembre</span> 2023</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e text-sky-950 ">Aunque no de la forma que muchos esperabais</h3>
                         </div>
                     </div>
                 </div>
@@ -790,8 +784,8 @@
                         
                         <!-- Contenido -->
                         <div class="p-4">
-                            <div class="text-gray-500 font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e">Y por fin ... 15 años despues, decidimos dar el gran paso!</h3>
+                            <div class="text-gray-500 font-bold font-e mb-2 text-sky-950"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
+                            <h3 class="text-gray-700 text-xl font-medium mb-2 font-e text-sky-950">Y por fin ... 15 años despues, decidimos dar el gran paso!</h3>
                         </div>
                     </div>
                 </div>
@@ -847,7 +841,7 @@
             </div>
         </div>
 
-        <h2 class="text-4xl text-center font-pacifico text-sky-950 mb-4">¿Te quedas a dormir?</h2>
+        <h2 class="text-4xl text-sky-950 font-pacifico mb-4 text-center">¿Te quedas a dormir?</h2>
 
         <p class="text-center mt-5 mb-6 font-e">
             Genial!! Porque también tenemos un plan para los que queréis quedaros, te recomendamos los siguientes hoteles.
@@ -881,7 +875,7 @@
 
     <!-- ALBUM DE BODA -->
     <div class="p-8 py-32 pb-36 text-center" style="background-image: url('{{ asset('storage/novios.png') }}'); background-size: cover;">
-        <h1 class="text-4xl font-pacifico text-sky-950 mb-6">Álbum de boda</h1>
+        <h1 class="text-4xl text-sky-950 font-pacifico mb-4">Álbum de boda</h1>
         <p class="font-e mb-6">Os invitamos a nuestro Álbum de Boda.<br>
             Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.</p>
         <p class="font-e mb-10">Por favor, añade tus fotos y ayuda a construir nuestro tesoro de recuerdos.</p>
@@ -908,7 +902,7 @@
     <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
     <div class="text-center mt-14 py-18">
         <div class="p-3">
-            <h1 class="text-5xl font-pacifico text-sky-950 mb-6">Fiesta</h1>
+            <h1 class="text-4xl text-sky-950 font-pacifico mb-4">Fiesta</h1>
             <p class="font-e mb-8">
                 Hagamos juntos una fiesta única.<br>
                 Os dejamos algunos detalles a tener en cuenta.
@@ -1020,7 +1014,7 @@
 
             <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music" />
 
-            <h2 class="text-3xl font-pacifico text-gray-800 mb-6 text-center">Sugerir Canción</h2>
+            <h2 class="text-4xl font-pacifico text-gray-800 mb-6 text-center">Sugerir Canción</h2>
 
             <form action="{{ route('cancion') }}" method="POST" enctype="multipart/form-data">
                 @csrf
@@ -1045,7 +1039,7 @@
     <!-- CONFIRMAR ASISTENCIA -->
     <div class="min-h-screen flex items-center justify-center bg-cover bg-center">
         <div class="p-8   rounded-lg w-full max-w-lg">
-            <h2 class="text-3xl  mb-6 text-center text-gray-800 font-pacifico">Confirmar Asistencia</h2>
+            <h2 class="text-4xl text-sky-950 font-pacifico mb-4 text-center">Confirmar Asistencia</h2>
             <p class="text-center mb-6 font-e">¡Ojalá contemos contigo! Por favor, completa el formulario y pulsa el botón para ayudarnos a contabilizar tu asistencia.</p>
 
             <form class="space-y-6" action="{{ route('confirmarAsistencia') }}" method="POST" enctype="multipart/form-data">
