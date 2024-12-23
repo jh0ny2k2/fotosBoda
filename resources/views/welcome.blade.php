@@ -301,16 +301,16 @@
         </div>
 
         <!-- WEEDING PASS -->
-        <div class="pt-10 px-1">
-            <img class="rounded-3xl shadow-xl" src="{{ asset('storage/invitacion.png') }}" alt="Invitación">
+        <div class="pt-10 pb-10 px-1">
+            <img class="rounded-lg shadow-xl" src="{{ asset('storage/invitacion.png') }}" alt="Invitación">
         </div>
     </div>
 
 
 
     <!-- SECCIÓN RELOJ -->
-    <section class="flex flex-col items-center justify-center bg-gray-200 py-8 ">
-        <div class="rounded-full p-8 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl ">
+    <section class="flex flex-col items-center justify-center " style="background-image: url('{{ asset('storage/preboda2.jpg') }}'); background-size: cover;">
+        <div class="rounded-full p-8 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl">
             <div class="text-center pb-4">
                 <span class="font-secondary text-sky-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Cuanto Falta Para el Viaje</span>
             </div>
@@ -333,6 +333,9 @@
                 </div>
             </div>
         </div>
+        <!-- <div class="pt-10 px-1">
+            <img class="rounded-lg shadow-xl" src="{{ asset('storage/preboda2.jpg') }}" alt="Invitación">
+        </div> -->
     </section>
 
 
