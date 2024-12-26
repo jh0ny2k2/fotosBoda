@@ -312,9 +312,9 @@
     </div>
     
     <!-- Contador -->
-    <div class="py-20 relative w-full max-w-lg p-8 rounded-lg overflow-hidden">
+    <div class="py-20 mt-20 relative w-full max-w-lg p-8 rounded-lg overflow-hidden">
         <!-- Fondo con imagen y semi-transparencia -->
-        <div class="absolute inset-0 bg-cover bg-center" 
+        <div class="absolute inset-0 bg-cover bg-center " 
              style="background-image: url('{{ asset('storage/reloj.png') }}');"></div>
         <!-- <div class="absolute inset-0 bg-white/70"></div> -->
         
@@ -1234,7 +1234,7 @@
         //===
         // VARIABLES
         //===
-        const DATE_TARGET = new Date('05/31/2025 12:00 AM');
+        const DATE_TARGET = new Date('05/31/2025 12:00 PM');
         // DOM for render
         const SPAN_DAYS = document.querySelector('span#days');
         const SPAN_HOURS = document.querySelector('span#hours');
