@@ -445,6 +445,147 @@
         </div>
     </div>
 
+    
+    <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
+    <div class="text-center mt-16 mb-16 py-18">
+        <div class="p-3">
+            <h1 class="text-4xl text-sky-950 font-pacifico mb-4">Fiesta</h1>
+            <p class="font-e mb-8">
+                Hagamos juntos una fiesta única.<br>
+                Os dejamos algunos detalles a tener en cuenta.
+            </p>
+
+            <div class="p-5">
+                <!-- SECCION DE MUSICA -->
+                <div class="py-8 px-8  rounded-xl max-w-md mx-auto">
+                    <h2 class="text-3xl font-secondary font-bold mb-4">Música</h2>
+                    <div class="mb-4">
+                        <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music" />
+                        <p class="font-e">¿Cuál es la canción que no debe faltar en la playlist de la fiesta?</p>
+                    </div>
+
+                    <!-- BOTON PARA ABRIR MODAL DE SUGERIR MUSICA -->
+                    <button id="openModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 transition-colors">
+                        Sugerir Canción
+                    </button>
+                </div>
+
+                <!-- SECCION DE DRESS CODE -->
+                <div class="py-20 px-8 mt-8 rounded-xl p-8 max-w-md mx-auto">
+                    <h2 class="text-3xl font-secondary font-bold mb-8">Bebidas</h2>
+                    <div class="mb-4">
+                        <img width="140" height="140" src="https://img.icons8.com/ios/50/cocktail.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="dress-code-icon" />
+                        <p class="font-e">Nunca es tarde para un buen café, <br> ni muy temprano para una copa</p>
+                    </div>
+
+                    <!-- BOTON PARA ABRIR EL MODAL DE DRESS CODE -->
+                    <button id="openDressCodeModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 transition-colors">
+                        Sugerir Bebida
+                    </button>
+                </div>
+            </div>
+
+            <!-- MODAL DE DRESS CODE -->
+            <div id="dressCodeModalContainer" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+                <div class="relative rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
+                    <button id="closeDressCodeModal" class="absolute top-4 right-4 text-gray-900 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16">
+                            <img src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" alt="Traje" class="mx-auto">
+                        </div>
+                    </div>
+
+                    <h2 class="text-2xl text-gray-950 font-pacifico mb-2">Dress Code</h2>
+                    <p class="text-lg font-e mb-6">Código de Vestimenta</p>
+
+                    <div class="mt-5">
+                        <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" class="mb-4" alt="horizontal-line" />
+                    
+                        <div class="mb-6 text-center">
+                            <p class="text-xl font-e font-semibold">Etiqueta</p>
+                            <p class="text-3xl font-e font-bold">Formal</p>
+                            <p class="text-xl font-e">Semi-Formal</p>
+                            <p class="text-xl font-e">Casual</p>
+                        </div>
+
+                        <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" alt="horizontal-line" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Script para abrir y cerrar el modal -->
+            <script>
+                // Obtener elementos del DOM
+                const openDressCodeModalButton = document.getElementById('openDressCodeModal');
+                const closeDressCodeModalButton = document.getElementById('closeDressCodeModal');
+                const dressCodeModalContainer = document.getElementById('dressCodeModalContainer');
+
+                // Abrir el modal al hacer clic en el botón
+                openDressCodeModalButton.addEventListener('click', () => {
+                    dressCodeModalContainer.classList.remove('hidden');
+                });
+
+                // Cerrar el modal al hacer clic en el botón de cerrar
+                closeDressCodeModalButton.addEventListener('click', () => {
+                    dressCodeModalContainer.classList.add('hidden');
+                });
+
+                // Cerrar el modal si se hace clic fuera del contenido del modal
+                window.addEventListener('click', (event) => {
+                    if (event.target === dressCodeModalContainer) {
+                        dressCodeModalContainer.classList.add('hidden');
+                    }
+                });
+            </script>
+
+
+               
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+    <!-- MODAL DE SECCION DE MUSICA -->
+    <div id="suggestionModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="relative rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
+
+            <button id="closeModal" class="absolute top-4 right-4 bg-white rounded-full p-2 border border-gray-300 shadow-lg text-sky-900 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music" />
+
+            <h2 class="text-4xl font-pacifico text-gray-800 mb-6 text-center">Sugerir Canción</h2>
+
+            <form action="{{ route('cancion') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+
+                <div class="mb-5">
+                    <input type="text" id="cancion" name="cancion" placeholder="Nombre canción y autor" class="text-center text-sm w-full p-3 border-b border-gray-200 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200" required>
+                </div>
+
+                <div class="mb-5">
+                    <input type="url" id="url" name="url" placeholder="Si quieres pon el link de YouTube, Spotify, etc." class="text-center text-sm w-full p-3 border-b border-gray-200 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200">
+                </div>
+
+                <div class="flex justify-center mt-4">
+                    <button type="submit" class=" text-gray-900 py-2 border-b-2 border-sky-900  transition-colors duration-200">Sugerir Canción</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 
 
     <!-- SECCIÓN FOTOS -->
@@ -794,6 +935,49 @@
 
 
 
+    
+
+
+
+    <!-- ALBUM DE BODA -->
+    <div class="min-h-screen bg-cover bg-center relative" style="background-image: url('{{ asset('storage/novios.png') }}');">
+    <!-- Semi-transparent overlay -->
+    <div class="absolute inset-0 bg-white/60"></div>
+    
+    <!-- Content container -->
+    <div class="relative p-8 min-h-screen flex flex-col items-center justify-center max-w-2xl mx-auto text-center">
+
+        <!-- Main content -->
+        <h1 class="text-4xl text-sky-950 font-pacifico mb-6">Álbum de boda</h1>
+        
+        <p class="text-gray-800 mb-4 max-w-md font-e">
+            Os invitamos a nuestro Álbum de Boda.
+            Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.
+        </p>
+        
+        <p class="text-gray-800 mb-8 max-w-md font-e">
+            Por favor, añade tus fotos y ayuda a construir nuestro tesoro de recuerdos.
+        </p>
+
+        <!-- Buttons -->
+        <div class="space-y-4 w-full max-w-xs">
+            <a href="{{ route('verSubirFotos') }}" 
+               class="block w-full text-center border-b-2 border-[#b39b79] hover:bg-[#b39b79] hover:text-white text-gray-900 py-3 px-6 transition-colors duration-200">
+                Subir Foto de Boda
+            </a>
+            
+            <a href="{{ route('verFotos') }}" 
+               class="block w-full text-center border-b-2 border-[#b39b79] hover:bg-[#b39b79] hover:text-white text-gray-900 py-3 px-6 transition-colors duration-200">
+                Ir Álbum de Boda
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
     <!-- SECCION HOTELES -->
     <div class=" p-8 py-24 max-w-md mx-auto ">
 
@@ -831,180 +1015,6 @@
                     </button>
                 </a>
             </div>
-        </div>
-    </div>
-
-
-
-    <!-- ALBUM DE BODA -->
-    <div class="min-h-screen bg-cover bg-center relative" style="background-image: url('{{ asset('storage/novios.png') }}');">
-    <!-- Semi-transparent overlay -->
-    <div class="absolute inset-0 bg-white/60"></div>
-    
-    <!-- Content container -->
-    <div class="relative p-8 min-h-screen flex flex-col items-center justify-center max-w-2xl mx-auto text-center">
-
-        <!-- Main content -->
-        <h1 class="text-4xl text-sky-950 font-pacifico mb-6">Álbum de boda</h1>
-        
-        <p class="text-gray-800 mb-4 max-w-md">
-            Os invitamos a nuestro Álbum de Boda.
-            Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.
-        </p>
-        
-        <p class="text-gray-800 mb-8 max-w-md">
-            Por favor, añade tus fotos y ayuda a construir nuestro tesoro de recuerdos.
-        </p>
-
-        <!-- Buttons -->
-        <div class="space-y-4 w-full max-w-xs">
-            <a href="{{ route('verSubirFotos') }}" 
-               class="block w-full text-center border-b-2 border-[#b39b79] hover:bg-[#b39b79] hover:text-white text-gray-900 py-3 px-6 transition-colors duration-200">
-                Subir Foto de Boda
-            </a>
-            
-            <a href="{{ route('verFotos') }}" 
-               class="block w-full text-center border-b-2 border-[#b39b79] hover:bg-[#b39b79] hover:text-white text-gray-900 py-3 px-6 transition-colors duration-200">
-                Ir Álbum de Boda
-            </a>
-        </div>
-    </div>
-</div>
-
-
-
-    <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
-    <div class="text-center mt-16 mb-16 py-18">
-        <div class="p-3">
-            <h1 class="text-4xl text-sky-950 font-pacifico mb-4">Fiesta</h1>
-            <p class="font-e mb-8">
-                Hagamos juntos una fiesta única.<br>
-                Os dejamos algunos detalles a tener en cuenta.
-            </p>
-
-            <div class="p-5">
-                <!-- SECCION DE MUSICA -->
-                <div class="py-8 px-8  rounded-xl max-w-md mx-auto">
-                    <h2 class="text-3xl font-secondary font-bold mb-4">Música</h2>
-                    <div class="mb-4">
-                        <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music" />
-                        <p class="font-e">¿Cuál es la canción que no debe faltar en la playlist de la fiesta?</p>
-                    </div>
-
-                    <!-- BOTON PARA ABRIR MODAL DE SUGERIR MUSICA -->
-                    <button id="openModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 transition-colors">
-                        Sugerir Canción
-                    </button>
-                </div>
-
-                <!-- SECCION DE DRESS CODE -->
-                <!-- <div class="py-20 px-8 mt-8   rounded-xl p-8 max-w-md mx-auto">
-                    <h2 class="text-3xl font-secondary font-bold">Dress Code</h2>
-                    <h2 class="text-lg font-e mb-4">Código de Vestimenta</h2>
-                    <div class="mb-4">
-                        <img width="158" height="158" src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="dress-code-icon" />
-                    </div> -->
-
-                    <!-- BOTON PARA ABRIR EL MODAL DE DRESS CODE -->
-                    <!-- <button id="openDressCodeModal" class="text-gray-900 border-b-2 border-[#b39b79] py-2 transition-colors">
-                        Ver Dress Code
-                    </button>
-                </div> -->
-            </div>
-
-            <!-- MODAL DE DRESS CODE -->
-            <div id="dressCodeModalContainer" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
-                <div class="relative rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
-                    <button id="closeDressCodeModal" class="absolute top-4 right-4 text-gray-900 focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-
-                    <div class="flex justify-center mb-4">
-                        <div class="w-16 h-16">
-                            <img src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" alt="Traje" class="mx-auto">
-                        </div>
-                    </div>
-
-                    <h2 class="text-2xl text-gray-950 font-pacifico mb-2">Dress Code</h2>
-                    <p class="text-lg font-e mb-6">Código de Vestimenta</p>
-
-                    <div class="mt-5">
-                        <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" class="mb-4" alt="horizontal-line" />
-                    
-                        <div class="mb-6 text-center">
-                            <p class="text-xl font-e font-semibold">Etiqueta</p>
-                            <p class="text-3xl font-e font-bold">Formal</p>
-                            <p class="text-xl font-e">Semi-Formal</p>
-                            <p class="text-xl font-e">Casual</p>
-                        </div>
-
-                        <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" alt="horizontal-line" />
-                    </div>
-                </div>
-            </div>
-
-            <!-- Script para abrir y cerrar el modal -->
-            <script>
-                // Obtener elementos del DOM
-                const openDressCodeModalButton = document.getElementById('openDressCodeModal');
-                const closeDressCodeModalButton = document.getElementById('closeDressCodeModal');
-                const dressCodeModalContainer = document.getElementById('dressCodeModalContainer');
-
-                // Abrir el modal al hacer clic en el botón
-                openDressCodeModalButton.addEventListener('click', () => {
-                    dressCodeModalContainer.classList.remove('hidden');
-                });
-
-                // Cerrar el modal al hacer clic en el botón de cerrar
-                closeDressCodeModalButton.addEventListener('click', () => {
-                    dressCodeModalContainer.classList.add('hidden');
-                });
-
-                // Cerrar el modal si se hace clic fuera del contenido del modal
-                window.addEventListener('click', (event) => {
-                    if (event.target === dressCodeModalContainer) {
-                        dressCodeModalContainer.classList.add('hidden');
-                    }
-                });
-            </script>
-
-
-               
-        </div>
-    </div>
-
-
-    <!-- MODAL DE SECCION DE MUSICA -->
-    <div id="suggestionModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
-        <div class="relative rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
-
-            <button id="closeModal" class="absolute top-4 right-4 bg-white rounded-full p-2 border border-gray-300 shadow-lg text-sky-900 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-
-            <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music" />
-
-            <h2 class="text-4xl font-pacifico text-gray-800 mb-6 text-center">Sugerir Canción</h2>
-
-            <form action="{{ route('cancion') }}" method="POST" enctype="multipart/form-data">
-                @csrf
-
-                <div class="mb-5">
-                    <input type="text" id="cancion" name="cancion" placeholder="Nombre canción y autor" class="text-center text-sm w-full p-3 border-b border-gray-200 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200" required>
-                </div>
-
-                <div class="mb-5">
-                    <input type="url" id="url" name="url" placeholder="Si quieres pon el link de YouTube, Spotify, etc." class="text-center text-sm w-full p-3 border-b border-gray-200 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200">
-                </div>
-
-                <div class="flex justify-center mt-4">
-                    <button type="submit" class=" text-gray-900 py-2 border-b-2 border-sky-900  transition-colors duration-200">Sugerir Canción</button>
-                </div>
-            </form>
         </div>
     </div>
 
