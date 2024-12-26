@@ -215,12 +215,12 @@
 
     <!-- MODAL DE BIENVENIDA PARA PONER MUSICA O NO -->
     <div id="musicModal" class="fixed inset-0 flex items-center justify-center bg-[#b39b79] bg-opacity-95 z-50">
-        <div class="rounded-lg text-center max-w-xs w-full p-6 flex flex-col items-center">
-            <img src="{{ asset('storage/logoooo.png') }}" class="p-4 w-52 h-52 mb-4" alt="Logo Boda">
-            <h2 class="text-4xl font-serif font-bold  mb-4">Bienvenidos a la invitación de <br> Miguel y Jenni</h2>
-            <p class=" mt-4 mb-10">La música es parte de la experiencia</p>
-            <button id="withMusic" class="w-full py-2 border-b-2 border-gray-950  font-medium mb-3">INGRESAR CON MÚSICA</button>
-            <button id="withoutMusic" class="w-full py-2 border-b-2 border-gray-950  font-medium">INGRESAR SIN MÚSICA</button>
+        <div class="rounded-lg text-center  w-full p-6 flex flex-col items-center">
+            <img src="{{ asset('storage/logoooo.png') }}" class="p-4 w-80 h-80 mb-4" alt="Logo Boda">
+            <!-- <h2 class="text-4xl font-serif font-bold  mb-4">Bienvenidos a la invitación de <br> Miguel y Jenni</h2>
+            <p class=" mt-4 mb-10">La música es parte de la experiencia</p> -->
+            <button id="withMusic" class="w-full py-2 border-b-2 border-gray-950  font-medium mb-3 text-xl">INGRESAR CON MÚSICA</button>
+            <button id="withoutMusic" class="w-full py-2 border-b-2 border-gray-950  font-medium text-xl">INGRESAR SIN MÚSICA</button>
         </div>
     </div>
 
@@ -290,7 +290,7 @@
 
 
     <!-- BANNER PRINCIPAL -->
-    <div class="relative sm:p-16 md:p-20 bg-center bg-gray-200" style="background-image: url('{{ asset('storage/fondo inicio.png') }}'); background-size: cover;">
+    <div class="relative sm:p-16 md:p-20 bg-center bg-gray-200" style="background-image: url('{{ asset('storage/fondo inicio.png') }}'); ">
         <div class="relative p-6 z-10 flex flex-col items-center justify-center h-full text-center text-white">
 
             <!-- GIF AVION -->
@@ -299,44 +299,59 @@
             <!-- IMAGEN PRINCIPAL -->
             <img src="{{ asset('storage/bodorrio.png') }}" class="py-2" alt="Bodorrio">
         </div>
-
-        <!-- WEEDING PASS -->
-        <div class="pt-10 pb-10 px-1">
-            <img class="rounded-lg shadow-xl" src="{{ asset('storage/invitacion.png') }}" alt="Invitación">
-        </div>
+        
+        
     </div>
 
 
 
-    <!-- SECCIÓN RELOJ -->
-    <section class="flex flex-col items-center justify-center " style="background-image: url('{{ asset('storage/preboda2.jpg') }}'); background-size: cover;">
-        <div class="rounded-full p-8 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl">
-            <div class="text-center pb-4">
-                <span class="font-secondary text-sky-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Cuanto Falta Para el Viaje</span>
-            </div>
-            <div class="flex flex-wrap justify-center rounded-full space-x-4 sm:space-x-6">
-                <div class="flex flex-col items-center border-r-0 border-black mb-4 sm:mb-0">
-                    <span id="days" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
-                    <span class="text-xs sm:text-sm text-gray-600">Días</span>
-                </div>
-                <div class="flex flex-col items-center border-r-0 border-black mb-4 sm:mb-0">
-                    <span id="hours" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
-                    <span class="text-xs sm:text-sm text-gray-600">Horas</span>
-                </div>
-                <div class="flex flex-col items-center border-r-0 border-black mb-4 sm:mb-0">
-                    <span id="minutes" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
-                    <span class="text-xs  sm:text-sm text-gray-600">Minutos</span>
-                </div>
+    <section class="flex flex-col items-center justify-center relative">
+    <!-- Imagen de invitación -->
+    <div class="mb-6 w-full max-w-lg">
+        <img class="rounded-lg w-full" src="{{ asset('storage/invitacion.png') }}" alt="Invitación de boda">
+    </div>
+    
+    <!-- Contador -->
+    <div class="py-20 relative w-full max-w-lg p-8 rounded-lg overflow-hidden">
+        <!-- Fondo con imagen y semi-transparencia -->
+        <div class="absolute inset-0 bg-cover bg-center" 
+             style="background-image: url('{{ asset('storage/reloj.png') }}');"></div>
+        <!-- <div class="absolute inset-0 bg-white/70"></div> -->
+        
+        <!-- Contenido del contador -->
+        <div class="relative text-center text-gray-800 z-10 pt-28">
+            <h2 class="font-secondary text-3xl sm:text-4xl font-bold text-gray-200 mb-4">Quedan...</h2>
+            
+            <!-- Contador en filas organizadas -->
+            <div class="grid grid-cols-4 gap-4">
+                <!-- Días -->
                 <div class="flex flex-col items-center">
-                    <span id="seconds" class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
-                    <span class="text-xs sm:text-sm text-gray-600">Segundos</span>
+                    <span id="days" class="text-4xl sm:text-5xl font-extrabold text-gray-200">155</span>
+                    <span class="text-sm text-gray-200">Días</span>
+                </div>
+                <!-- Horas -->
+                <div class="flex flex-col items-center">
+                    <span id="hours" class="text-4xl sm:text-5xl font-extrabold text-gray-200">03</span>
+                    <span class="text-sm text-gray-200">Horas</span>
+                </div>
+                <!-- Minutos -->
+                <div class="flex flex-col items-center">
+                    <span id="minutes" class="text-4xl sm:text-5xl font-extrabold text-gray-200">26</span>
+                    <span class="text-sm text-gray-200">Minutos</span>
+                </div>
+                <!-- Segundos -->
+                <div class="flex flex-col items-center">
+                    <span id="seconds" class="text-4xl sm:text-5xl font-extrabold text-gray-200">50</span>
+                    <span class="text-sm text-gray-200">Segundos</span>
                 </div>
             </div>
         </div>
-        <!-- <div class="pt-10 px-1">
-            <img class="rounded-lg shadow-xl" src="{{ asset('storage/preboda2.jpg') }}" alt="Invitación">
-        </div> -->
-    </section>
+    </div>
+</section>
+
+
+
+
 
 
 
@@ -748,27 +763,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="relative pl-8 mb-12"> -->
-                    <!-- <div class="absolute left-0 -translate-x-1/2 w-8 h-8 rounded-full bg-[#8f7b60] flex items-center justify-center">
-                        <div class="w-6 h-6 rounded-full text-center text-red bg-[#b39b79]"><i class="zmdi zmdi-favorite"></i></div> -->
-                    <!-- </div> -->
-                    
-                    <!-- Tarjeta -->
-                    <!-- <div class="bg-white rounded-lg shadow-md shadow-[#beb9b2]  overflow-hidden max-w-sm"> -->
-                        <!-- Imagen -->
-                        <!-- <div class="w-full h-48 overflow-hidden">
-                            <img src="{{ asset('storage/13,1.jpg') }}" 
-                                 alt="Días de invierno" 
-                                 class="w-full h-full object-cover">
-                        </div> -->
-                        
-                        <!-- Contenido -->
-                        <!-- <div class="p-4">
-                            <div class="text-gray-500 text-lg font-bold font-e mb-2"><span class="text-[#b39b79] ">Noviembre</span> 2023</div>
-                            <h3 class="text-gray-700 text-xl font-medium mb-2">Great winter days</h3>
-                        </div>
-                    </div>
-                </div> -->
 
                 <div class="relative pl-8 mb-12">
                     <!-- Círculo rosa (corazón) -->
@@ -795,40 +789,6 @@
             </div>
         </div>
     </div>
-
-        <!-- <div class="w-full relative">
-            <div class="swiper default-carousel swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="bg-gray-200 bg-opacity-80 rounded-10xl flex justify-center items-center">
-                            <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
-                            <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
-                            <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
-                            <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="bg-indigo-50 rounded-10xl flex justify-center items-center">
-                            <img src="{{ asset('storage/FotoPrimos.jpeg') }}" class="w-full rounded" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <p class="text-center text-gray-500 mt-2">Desliza a la izquierda para ver más imágenes</p> -->
 
     </section>
 
@@ -877,28 +837,39 @@
 
 
     <!-- ALBUM DE BODA -->
-    <div class="p-8 py-32 pb-36 text-center" style="background-image: url('{{ asset('storage/novios.png') }}'); background-size: cover;">
-        <h1 class="text-4xl text-sky-950 font-pacifico mb-4">Álbum de boda</h1>
-        <p class="font-e mb-6">Os invitamos a nuestro Álbum de Boda.<br>
-            Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.</p>
-        <p class="font-e mb-10">Por favor, añade tus fotos y ayuda a construir nuestro tesoro de recuerdos.</p>
+    <div class="min-h-screen bg-cover bg-center relative" style="background-image: url('{{ asset('storage/novios.png') }}');">
+    <!-- Semi-transparent overlay -->
+    <div class="absolute inset-0 bg-white/60"></div>
+    
+    <!-- Content container -->
+    <div class="relative p-8 min-h-screen flex flex-col items-center justify-center max-w-2xl mx-auto text-center">
 
-        <!-- BOTONES --> 
-        <div class="space-y-7 mt-7">
+        <!-- Main content -->
+        <h1 class="text-4xl text-sky-950 font-pacifico mb-6">Álbum de boda</h1>
+        
+        <p class="text-gray-800 mb-4 max-w-md">
+            Os invitamos a nuestro Álbum de Boda.
+            Cada imagen que compartáis será un valioso recuerdo de felicidad y unión.
+        </p>
+        
+        <p class="text-gray-800 mb-8 max-w-md">
+            Por favor, añade tus fotos y ayuda a construir nuestro tesoro de recuerdos.
+        </p>
+
+        <!-- Buttons -->
+        <div class="space-y-4 w-full max-w-xs">
+            <a href="{{ route('verSubirFotos') }}" 
+               class="block w-full text-center border-b-2 border-[#b39b79] hover:bg-[#b39b79] hover:text-white text-gray-900 py-3 px-6 transition-colors duration-200">
+                Subir Foto de Boda
+            </a>
             
-            <!-- BOTON DE SUBIR FOTOS -->
-            <div class="text-center">
-                <a href="{{ route('verSubirFotos') }}" class=" border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 mt-2 ">Subir Foto de Boda</a>
-            </div>
-
-            <!-- BOTON DE IR A ALBUM DE FOTOS -->
-            <div class="text-center">
-                <a href="{{ route('verFotos') }}" class=" border-b-2 border-[#b39b79] hover:bg-[#9a8261] text-gray-900 py-2 mt-2 ">Ir Álbum de Boda</a>
-            </div>
+            <a href="{{ route('verFotos') }}" 
+               class="block w-full text-center border-b-2 border-[#b39b79] hover:bg-[#b39b79] hover:text-white text-gray-900 py-3 px-6 transition-colors duration-200">
+                Ir Álbum de Boda
+            </a>
         </div>
-
-
     </div>
+</div>
 
 
 
