@@ -315,9 +315,7 @@
     <div class="py-20 mt-20 relative w-full max-w-lg p-8 rounded-lg overflow-hidden">
         <!-- Fondo con imagen y semi-transparencia -->
         <div class="absolute inset-0 bg-cover bg-center " 
-             style="background-image: url('{{ asset('storage/reloj.png') }}');"></div>
-        <!-- <div class="absolute inset-0 bg-white/70"></div> -->
-        
+             style="background-image: url('{{ asset('storage/reloj.png') }}');"></div>        
         <!-- Contenido del contador -->
         <div class="relative text-center text-gray-800 z-10 pt-28">
             <h2 class="font-secondary text-3xl sm:text-4xl font-bold text-gray-200 mb-4">Quedan...</h2>
