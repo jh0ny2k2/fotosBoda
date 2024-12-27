@@ -7,7 +7,7 @@
 
     <!-- TITULO E ICONO DE LA PÇAGINA-->
     <title>Miguel & Jenni</title>
-    <link rel="icon" href="{{ asset('storage/fondoPrimo.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('storage/logoooo.png') }}" type="image/png">
 
     <!-- CDN TAILWIND -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -382,7 +382,7 @@
 
 
     <!-- SECCIÓN ITINERARIO -->
-    <div class="py-16 px-4 sm:px-8 md:px-16 flex flex-col items-center">
+    <div class="py-16 px-4 mb-12 sm:px-8 md:px-16 flex flex-col items-center">
         <h3 class="text-4xl text-sky-950 font-pacifico mb-4">Itinerario</h3>
 
         <!-- CEREMONIA -->
@@ -447,7 +447,7 @@
 
     
     <!-- SECCION DE FIESTAS CON LAS CANCIONES -->
-    <div class="text-center mt-16 mb-16 py-18">
+    <div class="text-center py-18">
         <div class="p-3">
             <h1 class="text-4xl text-sky-950 font-pacifico mb-4">Fiesta</h1>
             <p class="font-e mb-8">
@@ -457,7 +457,7 @@
 
             <div class="p-5">
                 <!-- SECCION DE MUSICA -->
-                <div class="py-8 px-8  rounded-xl max-w-md mx-auto">
+                <div class="py-4 px-8 rounded-xl max-w-md mx-auto">
                     <h2 class="text-3xl font-secondary font-bold mb-4">Música</h2>
                     <div class="mb-4">
                         <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music" />
@@ -471,7 +471,7 @@
                 </div>
 
                 <!-- SECCION DE DRESS CODE -->
-                <div class="py-20 px-8 mt-8 rounded-xl p-8 max-w-md mx-auto">
+                <div class="py-8 px-8 mt-8 rounded-xl max-w-md mx-auto">
                     <h2 class="text-3xl font-secondary font-bold mb-8">Bebidas</h2>
                     <div class="mb-4">
                         <img width="140" height="140" src="https://img.icons8.com/ios/50/cocktail.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="dress-code-icon" />
@@ -589,7 +589,7 @@
 
 
     <!-- SECCIÓN FOTOS -->
-    <section class="pt-20 pb-32 px-4 sm:px-8" >
+    <section class="pb-32 px-4 sm:px-8" >
         <!-- style="background-image: url('{{ asset('storage/fondo1.png') }}'); background-size: cover;" -->
         <div class="text-center p-8 sm:p-16 md:p-20">
             <div class="pt-10 flex justify-center pb-5">
