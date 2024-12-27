@@ -486,33 +486,29 @@
             <!-- MODAL DE DRESS CODE -->
             <div id="dressCodeModalContainer" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
                 <div class="relative rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
-                    <button id="closeDressCodeModal" class="absolute top-4 right-4 text-gray-900 focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
 
-                    <div class="flex justify-center mb-4">
-                        <div class="w-16 h-16">
-                            <img src="{{ asset('storage/ICONO-DRESS-CODE.png') }}" alt="Traje" class="mx-auto">
-                        </div>
+                <button id="closeModal" class="absolute top-4 right-4 bg-white rounded-full p-2 border border-gray-300 shadow-lg text-sky-900 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <img width="128" height="128" src="https://img.icons8.com/ios/50/cocktail.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="dress-code-icon" />
+                
+
+                <h2 class="text-4xl font-pacifico text-gray-800 mb-6 text-center">Sugerir bebida</h2>
+
+                <form action="{{ route('bebida') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+
+                    <div class="mb-5">
+                        <input type="text" id="bebida" name="bebida" placeholder="Nombre de la bebida" class="text-center text-sm w-full p-3 border-b border-gray-200 focus:ring-sky-500 focus:border-sky-500 transition-all duration-200" required>
                     </div>
 
-                    <h2 class="text-2xl text-gray-950 font-pacifico mb-2">Dress Code</h2>
-                    <p class="text-lg font-e mb-6">Código de Vestimenta</p>
-
-                    <div class="mt-5">
-                        <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" class="mb-4" alt="horizontal-line" />
-                    
-                        <div class="mb-6 text-center">
-                            <p class="text-xl font-e font-semibold">Etiqueta</p>
-                            <p class="text-3xl font-e font-bold">Formal</p>
-                            <p class="text-xl font-e">Semi-Formal</p>
-                            <p class="text-xl font-e">Casual</p>
-                        </div>
-
-                        <img src="{{ asset('storage/Horizontal-Line-PNG.png') }}" alt="horizontal-line" />
+                    <div class="flex justify-center mt-4">
+                        <button type="submit" class=" text-gray-900 py-2 border-b-2 border-sky-900  transition-colors duration-200">Sugerir Bebida</button>
                     </div>
+                </form>
                 </div>
             </div>
 

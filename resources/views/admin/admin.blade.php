@@ -35,6 +35,12 @@
                     <span class="material-icons text-blue-500 text-6xl">music_note</span>
                     <p class="text-gray-800 text-xl">Canciones</p>
                 </a>
+
+                <!-- CANCIONES -->
+                <a href=" {{ route('admin') }}" class="shadow-xl border border-gray-500 rounded-lg flex py-16 flex-col items-center justify-center bg-white p-6 hover:bg-blue-100 transition-colors">
+                    <span class="material-icons text-blue-500 text-6xl">liquor</span>
+                    <p class="text-gray-800 text-xl">Bebidas</p>
+                </a>
             </div>
         </div>
     </div>
