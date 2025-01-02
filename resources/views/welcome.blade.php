@@ -354,28 +354,29 @@
 
 
     <!-- SECCIÓN INFORMACIÓN -->
-    <section class="py-24 ">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-                <div class="flex flex-col items-center">
-                    <div class="mb-4">
-                        
-                        <!-- IMAGEN PARA SECCION -->
-                        <img width="50" height="50" src="https://img.icons8.com/ios/50/around-the-globe.png" alt="around-the-globe" />
-                    </div>
-
-                    <!-- INFORMACION DE LA SECCION -->
-                    <h3 class="text-3xl text-sky-950 font-pacifico mb-4">La Celebración</h3>
-                    <p class="text-2xl font-e text-center font-bold text-[#b39b79]  mt-10 ">Salones Drako</p>
-                    <p class="text-lg text-center mb-6 font-e">Carretera Gador-Laujar, Alhama de Almería</p>
-                    <p class="text-lg text-center mb-8 font-e">31 de Mayo a las 12:00 h</p>
-
-                    <!-- ENLACE DIRECTO A GOOGLE MAPS -->
-                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd700c912e7d8be9:0x3b966fc438429562?sa=X&ved=1t:8290&ictx=111" class=" text-sky-950 border-b-2 border-yellow-600 py-3 text-lg ">Ver ubicación</a>
+    <section class="py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8 md:px-16">
+            <div class="flex flex-col items-center">
+                <div class="mb-4">
+                    <!-- IMAGEN PARA SECCIÓN -->
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/around-the-globe.png" alt="around-the-globe" />
                 </div>
+
+                <!-- INFORMACIÓN DE LA SECCIÓN -->
+                <h3 class="text-3xl text-sky-950 font-pacifico mb-4 text-center">La Celebración</h3>
+                <p class="text-2xl font-e text-center font-bold text-[#b39b79] mt-10">Salones Drako</p>
+                <p class="text-lg text-center mb-6 font-e">Carretera Gador-Laujar, Alhama de Almería</p>
+                <p class="text-lg text-center mb-8 font-e">31 de Mayo a las 12:00 h</p>
+
+                <!-- ENLACE DIRECTO A GOOGLE MAPS -->
+                <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd700c912e7d8be9:0x3b966fc438429562?sa=X&ved=1t:8290&ictx=111" 
+                    class="text-sky-950 border-b-2 border-yellow-600 py-3 text-lg text-center">
+                    Ver ubicación
+                </a>
             </div>
         </div>
     </section>
+
 
 
 
@@ -583,7 +584,7 @@
 
 
     <!-- SECCIÓN FOTOS -->
-    <section class="pb-32 px-4 sm:px-8" >
+    <section class="pb-32 px-4 sm:px-8">
         <!-- style="background-image: url('{{ asset('storage/fondo1.png') }}'); background-size: cover;" -->
         <div class="text-center p-8 sm:p-16 md:p-20">
             <div class="pt-10 flex justify-center pb-5">
@@ -594,7 +595,7 @@
             <!-- <p class="font-e text-lg pt-2">Un minuto, un segundo, un instante que queda en la eternidad</p> -->
         </div>
 
-        <div class="max-w-3xl mx-auto p-4">
+       <div class="max-w-6xl mx-auto p-4">
         <!-- Timeline container con línea vertical -->
         <div class="relative py-8 px-4">
             <!-- Línea vertical -->
