@@ -484,15 +484,9 @@
                 </div>
             </div>
 
-            <!-- MODAL DE DRESS CODE -->
+            <!-- MODAL DE BEBIDA-->
             <div id="dressCodeModalContainer" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
                 <div class="relative rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
-
-                <button id="closeModal" class="absolute top-4 right-4 bg-white rounded-full p-2 border border-gray-300 shadow-lg text-sky-900 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
 
                 <img width="128" height="128" src="https://img.icons8.com/ios/50/cocktail.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="dress-code-icon" />
                 
@@ -509,15 +503,21 @@
                     <div class="flex justify-center mt-4">
                         <button type="submit" class=" text-gray-900 py-2 border-b-2 border-sky-900  transition-colors duration-200">Sugerir Bebida</button>
                     </div>
+
+                    
                 </form>
+
+                <div class="flex justify-center mt-4">
+                    <button class="text-xs text-gray-900 pt-2 ">Para salir de la pantalla, haz clic fuera del recuadro.</button>
                 </div>
-            </div>
+                </div>
+            </div>  
 
             <!-- Script para abrir y cerrar el modal -->
             <script>
                 // Obtener elementos del DOM
                 const openDressCodeModalButton = document.getElementById('openDressCodeModal');
-                const closeDressCodeModalButton = document.getElementById('closeDressCodeModal');
+                const closeDressCodeModalButton = document.getElementById('closeModal');
                 const dressCodeModalContainer = document.getElementById('dressCodeModalContainer');
 
                 // Abrir el modal al hacer clic en el botón
@@ -553,12 +553,6 @@
     <div id="suggestionModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
         <div class="relative rounded-xl shadow-2xl p-6 w-full max-w-lg bg-white transform transition-all duration-300 ease-in-out scale-95">
 
-            <button id="closeModal" class="absolute top-4 right-4 bg-white rounded-full p-2 border border-gray-300 shadow-lg text-sky-900 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-
             <img width="128" height="128" src="https://img.icons8.com/pastel-glyph/128/music.png" class="h-16 w-16 text-amber-500 mx-auto mb-4" alt="music" />
 
             <h2 class="text-4xl font-pacifico text-gray-800 mb-6 text-center">Sugerir Canción</h2>
@@ -578,8 +572,12 @@
                     <button type="submit" class=" text-gray-900 py-2 border-b-2 border-sky-900  transition-colors duration-200">Sugerir Canción</button>
                 </div>
             </form>
+            <div class="flex justify-center mt-4">
+                <button class="text-xs text-gray-900 pt-2 ">Para salir de la pantalla, haz clic fuera del recuadro.</button>
+            </div>
         </div>
     </div>
+
 
 
 
