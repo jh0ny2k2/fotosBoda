@@ -959,7 +959,7 @@
                 Subir Foto de Boda
             </a>
             
-            <a href="{{ route('verFotos') }}" 
+            <a href="https://web.dotstheapp.com/a?groupId=1536344&code=6nF5eghR&dlBy=miguelyjenni" 
                class="block w-full text-center border-b-2 border-[#b39b79] hover:bg-[#b39b79] hover:text-white text-gray-900 py-3 px-6 transition-colors duration-200">
                 Ir Álbum de Boda
             </a>
